@@ -5,7 +5,7 @@
   font-weight: 400;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Book"), local("Gotham Book");
-  src: url("/app/themes/inweave/public/fonts/Gotham Book.woff2?822b1d0fc71165304130bb16176eebd6") format("woff2");
+  src: url("./../fonts/Gotham Book.woff2?822b1d0fc71165304130bb16176eebd6") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -14,7 +14,7 @@
   font-weight: 400;
   unicode-range: U+0020-00FE;
   src: local("Gotham-BookItalic"), local("Gotham Book Italic");
-  src: url("/app/themes/inweave/public/fonts/Gotham Book Italic.woff2?0f544f9b441de5c2ba0d4bd133bd0772") format("woff2");
+  src: url("./../fonts/Gotham Book Italic.woff2?0f544f9b441de5c2ba0d4bd133bd0772") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -23,7 +23,7 @@
   font-weight: 500;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Medium"), local("Gotham Medium");
-  src: url("/app/themes/inweave/public/fonts/Gotham Medium.woff2?eb025c0b7d84a2c6eaec3fc9c69cb796") format("woff2");
+  src: url("./../fonts/Gotham Medium.woff2?eb025c0b7d84a2c6eaec3fc9c69cb796") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -32,7 +32,7 @@
   font-weight: 500;
   unicode-range: U+0020-00FE;
   src: local("Gotham-MediumItalic"), local("Gotham Medium Italic");
-  src: url("/app/themes/inweave/public/fonts/Gotham Medium Italic.woff2?a1271e9811395f85f4ab865e3b46f1d9") format("woff2");
+  src: url("./../fonts/Gotham Medium Italic.woff2?a1271e9811395f85f4ab865e3b46f1d9") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -41,7 +41,7 @@
   font-weight: 700;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Bold"), local("Gotham Bold");
-  src: url("/app/themes/inweave/public/fonts/Gotham Bold.woff2?c4fece77364a317260ff363fee52eae3") format("woff2");
+  src: url("./../fonts/Gotham Bold.woff2?c4fece77364a317260ff363fee52eae3") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -50,7 +50,7 @@
   font-weight: 700;
   unicode-range: U+0020-00FE;
   src: local("Gotham-BoldItalic"), local("Gotham Bold Italic");
-  src: url("/app/themes/inweave/public/fonts/Gotham Bold Italic.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
+  src: url("./../fonts/Gotham Bold Italic.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
 }
 :root {
   --primary-dark-color: #414142;
@@ -973,8 +973,8 @@ html.modal-open::after {
   the SVG.
   3. Using an SVG image to ensure the logo stays crisp at all
   resolutions. */
-  -webkit-mask: url(/app/themes/inweave/public/images/brand-logo.svg?2039e268c855c0b90135c653f31a0e82) 0 50%/100% 40% no-repeat;
-          mask: url(/app/themes/inweave/public/images/brand-logo.svg?2039e268c855c0b90135c653f31a0e82) 0 50%/100% 40% no-repeat;
+  -webkit-mask: url(./../images/brand-logo.svg?2039e268c855c0b90135c653f31a0e82) 0 50%/100% 40% no-repeat;
+          mask: url(./../images/brand-logo.svg?2039e268c855c0b90135c653f31a0e82) 0 50%/100% 40% no-repeat;
   transition: background-color 100ms;
   width: 100%;
 }
