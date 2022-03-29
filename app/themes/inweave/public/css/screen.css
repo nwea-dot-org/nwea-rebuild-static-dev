@@ -986,9 +986,6 @@ html.modal-open::after {
 [is=org-page-header] .nav-toggle {
   display: none;
 }
-[is=org-page-header] a.logo:hover, [is=org-page-header] a.logo:focus {
-  background-color: var(--primary-light-color);
-}
 @media (min-width: 993px) {
   [is=org-page-header]::before {
     background: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj4KPHJlY3Qgd2lkdGg9IjE5MjAiIGhlaWdodD0iMjAiIGZpbGw9IiNGRkMyMEUiLz4KPHJlY3QgeD0iMTQzNiIgd2lkdGg9IjQ4NCIgaGVpZ2h0PSIyMCIgZmlsbD0iI0VEMDY3NyIvPgo8cmVjdCB4PSIxNjU4IiB3aWR0aD0iMjYyIiBoZWlnaHQ9IjIwIiBmaWxsPSIjQUMyMDhDIi8+CjxyZWN0IHg9IjE3NzQiIHdpZHRoPSIxNDYiIGhlaWdodD0iMjAiIGZpbGw9IiMxQUE3OUQiLz4KPHJlY3QgeD0iMTkxMCIgd2lkdGg9IjEwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjMDYzRTVBIi8+Cjwvc3ZnPgo=) 100% 0/100% 100% var(--primary-light-color) no-repeat;
