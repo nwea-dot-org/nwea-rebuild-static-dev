@@ -1,30 +1,1245 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en-US">
-    <head>
-                        <meta charset="UTF-8">
-            <title>    
-</title>
-            <meta name="description" content="">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-                    <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-            <!-- Avoid FOUC without introducing modernizer
-                 See: https://www.paulirish.com/2009/avoiding-the-fouc-v3/-->
-            <script>document.documentElement.classList.replace("no-js", "js");</script>
-            <meta name="theme-color" content="#fafafa">
-        
-    <title>NWEA Dev Local</title>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>.wp-container-624373be64ae4 {display: flex;gap: var( --wp--style--block-gap, 0.5em );flex-wrap: wrap;align-items: center;align-items: center;}.wp-container-624373be64ae4 > * { margin: 0; }</style>
+<style>.wp-container-624373be687e1 {display: flex;gap: var( --wp--style--block-gap, 0.5em );flex-wrap: wrap;align-items: center;align-items: center;justify-content: flex-end;}.wp-container-624373be687e1 > * { margin: 0; }</style>
+<style>.wp-container-624373be6a47e {display: flex;gap: var( --wp--style--block-gap, 0.5em );flex-wrap: wrap;align-items: center;align-items: center;justify-content: space-between;}.wp-container-624373be6a47e > * { margin: 0; }</style>
+<style>.wp-container-624373be6bf6a > * {max-width: 650px;margin-left: auto !important;margin-right: auto !important;}.wp-container-624373be6bf6a > .alignwide { max-width: 1000px;}.wp-container-624373be6bf6a .alignfull { max-width: none; }.wp-container-624373be6bf6a .alignleft { float: left; margin-right: 2em; }.wp-container-624373be6bf6a .alignright { float: right; margin-left: 2em; }.wp-container-624373be6bf6a > * { margin-top: 0; margin-bottom: 0; }.wp-container-624373be6bf6a > * + * { margin-top: var( --wp--style--block-gap );  margin-bottom: 0; }</style>
+<style>.wp-elements-624373be6cb8f a{color: var(--wp--preset--color--background);}</style>
+<style>.wp-container-624373be6e774 > * {max-width: 650px;margin-left: auto !important;margin-right: auto !important;}.wp-container-624373be6e774 > .alignwide { max-width: 1000px;}.wp-container-624373be6e774 .alignfull { max-width: none; }.wp-container-624373be6e774 .alignleft { float: left; margin-right: 2em; }.wp-container-624373be6e774 .alignright { float: right; margin-left: 2em; }.wp-container-624373be6e774 > * { margin-top: 0; margin-bottom: 0; }.wp-container-624373be6e774 > * + * { margin-top: var( --wp--style--block-gap );  margin-bottom: 0; }</style>
+<style>.wp-container-624373be71fd7 > * {max-width: 650px;margin-left: auto !important;margin-right: auto !important;}.wp-container-624373be71fd7 > .alignwide { max-width: 1000px;}.wp-container-624373be71fd7 .alignfull { max-width: none; }.wp-container-624373be71fd7 .alignleft { float: left; margin-right: 2em; }.wp-container-624373be71fd7 .alignright { float: right; margin-left: 2em; }.wp-container-624373be71fd7 > * { margin-top: 0; margin-bottom: 0; }.wp-container-624373be71fd7 > * + * { margin-top: var( --wp--style--block-gap );  margin-bottom: 0; }</style>
+<style>.wp-container-624373be7365b .alignleft { float: left; margin-right: 2em; }.wp-container-624373be7365b .alignright { float: right; margin-left: 2em; }.wp-container-624373be7365b > * { margin-top: 0; margin-bottom: 0; }.wp-container-624373be7365b > * + * { margin-top: var( --wp--style--block-gap );  margin-bottom: 0; }</style>
+<style>.wp-container-624373be7568a > * {max-width: 650px;margin-left: auto !important;margin-right: auto !important;}.wp-container-624373be7568a > .alignwide { max-width: 1000px;}.wp-container-624373be7568a .alignfull { max-width: none; }.wp-container-624373be7568a .alignleft { float: left; margin-right: 2em; }.wp-container-624373be7568a .alignright { float: right; margin-left: 2em; }.wp-container-624373be7568a > * { margin-top: 0; margin-bottom: 0; }.wp-container-624373be7568a > * + * { margin-top: var( --wp--style--block-gap );  margin-bottom: 0; }</style>
+<style>.wp-container-624373be76ebb .alignleft { float: left; margin-right: 2em; }.wp-container-624373be76ebb .alignright { float: right; margin-left: 2em; }.wp-container-624373be76ebb > * { margin-top: 0; margin-bottom: 0; }.wp-container-624373be76ebb > * + * { margin-top: var( --wp--style--block-gap );  margin-bottom: 0; }</style>
+<style>.wp-container-624373be78aa4 > * {max-width: 650px;margin-left: auto !important;margin-right: auto !important;}.wp-container-624373be78aa4 > .alignwide { max-width: 1000px;}.wp-container-624373be78aa4 .alignfull { max-width: none; }.wp-container-624373be78aa4 .alignleft { float: left; margin-right: 2em; }.wp-container-624373be78aa4 .alignright { float: right; margin-left: 2em; }.wp-container-624373be78aa4 > * { margin-top: 0; margin-bottom: 0; }.wp-container-624373be78aa4 > * + * { margin-top: var( --wp--style--block-gap );  margin-bottom: 0; }</style>
+<style>.wp-container-624373be7a0dd .alignleft { float: left; margin-right: 2em; }.wp-container-624373be7a0dd .alignright { float: right; margin-left: 2em; }.wp-container-624373be7a0dd > * { margin-top: 0; margin-bottom: 0; }.wp-container-624373be7a0dd > * + * { margin-top: var( --wp--style--block-gap );  margin-bottom: 0; }</style>
+<style>.wp-container-624373be7c671 > * {max-width: 650px;margin-left: auto !important;margin-right: auto !important;}.wp-container-624373be7c671 > .alignwide { max-width: 1000px;}.wp-container-624373be7c671 .alignfull { max-width: none; }.wp-container-624373be7c671 .alignleft { float: left; margin-right: 2em; }.wp-container-624373be7c671 .alignright { float: right; margin-left: 2em; }.wp-container-624373be7c671 > * { margin-top: 0; margin-bottom: 0; }.wp-container-624373be7c671 > * + * { margin-top: var( --wp--style--block-gap );  margin-bottom: 0; }</style>
+<style>.wp-container-624373be7dcd2 .alignleft { float: left; margin-right: 2em; }.wp-container-624373be7dcd2 .alignright { float: right; margin-left: 2em; }.wp-container-624373be7dcd2 > * { margin-top: 0; margin-bottom: 0; }.wp-container-624373be7dcd2 > * + * { margin-top: var( --wp--style--block-gap );  margin-bottom: 0; }</style>
+<style>.wp-container-624373be7ffad > * {max-width: 650px;margin-left: auto !important;margin-right: auto !important;}.wp-container-624373be7ffad > .alignwide { max-width: 1000px;}.wp-container-624373be7ffad .alignfull { max-width: none; }.wp-container-624373be7ffad .alignleft { float: left; margin-right: 2em; }.wp-container-624373be7ffad .alignright { float: right; margin-left: 2em; }.wp-container-624373be7ffad > * { margin-top: 0; margin-bottom: 0; }.wp-container-624373be7ffad > * + * { margin-top: var( --wp--style--block-gap );  margin-bottom: 0; }</style>
+<style>.wp-container-624373be811e9 .alignleft { float: left; margin-right: 2em; }.wp-container-624373be811e9 .alignright { float: right; margin-left: 2em; }.wp-container-624373be811e9 > * { margin-top: 0; margin-bottom: 0; }.wp-container-624373be811e9 > * + * { margin-top: var( --wp--style--block-gap );  margin-bottom: 0; }</style>
+<style>.wp-container-624373be8314e > * {max-width: 650px;margin-left: auto !important;margin-right: auto !important;}.wp-container-624373be8314e > .alignwide { max-width: 1000px;}.wp-container-624373be8314e .alignfull { max-width: none; }.wp-container-624373be8314e .alignleft { float: left; margin-right: 2em; }.wp-container-624373be8314e .alignright { float: right; margin-left: 2em; }.wp-container-624373be8314e > * { margin-top: 0; margin-bottom: 0; }.wp-container-624373be8314e > * + * { margin-top: var( --wp--style--block-gap );  margin-bottom: 0; }</style>
+<style>.wp-container-624373be84975 .alignleft { float: left; margin-right: 2em; }.wp-container-624373be84975 .alignright { float: right; margin-left: 2em; }.wp-container-624373be84975 > * { margin-top: 0; margin-bottom: 0; }.wp-container-624373be84975 > * + * { margin-top: var( --wp--style--block-gap );  margin-bottom: 0; }</style>
+<style>.wp-container-624373be86fc5 > * {max-width: 650px;margin-left: auto !important;margin-right: auto !important;}.wp-container-624373be86fc5 > .alignwide { max-width: 1000px;}.wp-container-624373be86fc5 .alignfull { max-width: none; }.wp-container-624373be86fc5 .alignleft { float: left; margin-right: 2em; }.wp-container-624373be86fc5 .alignright { float: right; margin-left: 2em; }.wp-container-624373be86fc5 > * { margin-top: 0; margin-bottom: 0; }.wp-container-624373be86fc5 > * + * { margin-top: var( --wp--style--block-gap );  margin-bottom: 0; }</style>
+<style>.wp-container-624373be88af3 .alignleft { float: left; margin-right: 2em; }.wp-container-624373be88af3 .alignright { float: right; margin-left: 2em; }.wp-container-624373be88af3 > * { margin-top: 0; margin-bottom: 0; }.wp-container-624373be88af3 > * + * { margin-top: var( --wp--style--block-gap );  margin-bottom: 0; }</style>
+<style>.wp-container-624373be8a561 .alignleft { float: left; margin-right: 2em; }.wp-container-624373be8a561 .alignright { float: right; margin-left: 2em; }.wp-container-624373be8a561 > * { margin-top: 0; margin-bottom: 0; }.wp-container-624373be8a561 > * + * { margin-top: var( --wp--style--block-gap );  margin-bottom: 0; }</style>
+<style>.wp-container-624373be8bfa5 {display: flex;gap: var( --wp--style--block-gap, 0.5em );flex-wrap: wrap;align-items: center;align-items: center;justify-content: space-between;}.wp-container-624373be8bfa5 > * { margin: 0; }</style>
+<style>.wp-container-624373be8d13d > * {max-width: 650px;margin-left: auto !important;margin-right: auto !important;}.wp-container-624373be8d13d > .alignwide { max-width: 1000px;}.wp-container-624373be8d13d .alignfull { max-width: none; }.wp-container-624373be8d13d .alignleft { float: left; margin-right: 2em; }.wp-container-624373be8d13d .alignright { float: right; margin-left: 2em; }.wp-container-624373be8d13d > * { margin-top: 0; margin-bottom: 0; }.wp-container-624373be8d13d > * + * { margin-top: var( --wp--style--block-gap );  margin-bottom: 0; }</style>
+<style>.wp-container-624373be8fbc7 {display: flex;gap: var( --wp--style--block-gap, 0.5em );flex-wrap: wrap;align-items: center;align-items: center;justify-content: space-between;}.wp-container-624373be8fbc7 > * { margin: 0; }</style>
+<style>.wp-container-624373be911ca > * {max-width: 650px;margin-left: auto !important;margin-right: auto !important;}.wp-container-624373be911ca > .alignwide { max-width: 1000px;}.wp-container-624373be911ca .alignfull { max-width: none; }.wp-container-624373be911ca .alignleft { float: left; margin-right: 2em; }.wp-container-624373be911ca .alignright { float: right; margin-left: 2em; }.wp-container-624373be911ca > * { margin-top: 0; margin-bottom: 0; }.wp-container-624373be911ca > * + * { margin-top: var( --wp--style--block-gap );  margin-bottom: 0; }</style>
+<style>.wp-container-624373be92992 > * {max-width: 650px;margin-left: auto !important;margin-right: auto !important;}.wp-container-624373be92992 > .alignwide { max-width: 1000px;}.wp-container-624373be92992 .alignfull { max-width: none; }.wp-container-624373be92992 .alignleft { float: left; margin-right: 2em; }.wp-container-624373be92992 .alignright { float: right; margin-left: 2em; }.wp-container-624373be92992 > * { margin-top: 0; margin-bottom: 0; }.wp-container-624373be92992 > * + * { margin-top: var( --wp--style--block-gap );  margin-bottom: 0; }</style>
 <meta name="robots" content="max-image-preview:large">
+<title>NWEA Dev Local</title>
 <link rel="dns-prefetch" href="./">
-<style id="global-styles-inline-css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}</style>
-<link rel="stylesheet" id="inweave/assets-css" href="./app/themes/inweave/public/css/screen.css" media="all">
-<script id="inweave/assets-js-extra">
-var inweaveData = {"templateDirectoryUri":".\/app\/themes\/inweave"};
-</script>
-<script src="./app/themes/inweave/public/js/main.js" id="inweave/assets-js" defer></script>
+<link rel="alternate" type="application/rss+xml" title="NWEA Dev Local &raquo; Feed" href="./feed/index.html">
+<link rel="alternate" type="application/rss+xml" title="NWEA Dev Local &raquo; Comments Feed" href="./comments/feed/index.html">
+<style id="wp-block-site-logo-inline-css">/**
+ * Colors
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+*  Converts a hex value into the rgb equivalent.
+*
+* @param {string} hex - the hexadecimal value to convert
+* @return {string} comma separated rgb values
+*/
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+.wp-block-site-logo {
+  line-height: 0;
+}
+.wp-block-site-logo a {
+  display: inline-block;
+}
+.wp-block-site-logo.is-default-size img {
+  width: 120px;
+  height: auto;
+}
+.wp-block-site-logo a,
+.wp-block-site-logo img {
+  border-radius: inherit;
+}
+.wp-block-site-logo.aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.wp-block-site-logo.is-style-rounded {
+  border-radius: 9999px;
+}</style>
+<style id="wp-block-group-inline-css">/**
+ * Colors
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+*  Converts a hex value into the rgb equivalent.
+*
+* @param {string} hex - the hexadecimal value to convert
+* @return {string} comma separated rgb values
+*/
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+.wp-block-group {
+  box-sizing: border-box;
+}
+/**
+ * Colors
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+*  Converts a hex value into the rgb equivalent.
+*
+* @param {string} hex - the hexadecimal value to convert
+* @return {string} comma separated rgb values
+*/
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+.wp-block-group:where(.has-background) {
+  padding: 1.25em 2.375em;
+}</style>
+<style id="wp-block-page-list-inline-css">/**
+ * Colors
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+*  Converts a hex value into the rgb equivalent.
+*
+* @param {string} hex - the hexadecimal value to convert
+* @return {string} comma separated rgb values
+*/
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+.wp-block-navigation .wp-block-page-list {
+  display: flex;
+  flex-direction: var(--navigation-layout-direction, initial);
+  justify-content: var(--navigation-layout-justify, initial);
+  align-items: var(--navigation-layout-align, initial);
+  flex-wrap: var(--navigation-layout-wrap, wrap);
+  background-color: inherit;
+}
+.wp-block-navigation .wp-block-navigation-item {
+  background-color: inherit;
+}</style>
+<link rel="stylesheet" id="wp-block-navigation-css" href="./wp/wp-includes/blocks/navigation/style.css?ver=5.9.2" media="all">
+<style id="wp-block-template-part-inline-css">/**
+ * Colors
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+*  Converts a hex value into the rgb equivalent.
+*
+* @param {string} hex - the hexadecimal value to convert
+* @return {string} comma separated rgb values
+*/
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+.wp-block-template-part.has-background {
+  padding: 1.25em 2.375em;
+  margin-top: 0;
+  margin-bottom: 0;
+}</style>
+<link rel="stylesheet" id="wp-block-image-css" href="./wp/wp-includes/blocks/image/style.css?ver=5.9.2" media="all">
+<style id="wp-block-image-inline-css">/**
+ * Colors
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+*  Converts a hex value into the rgb equivalent.
+*
+* @param {string} hex - the hexadecimal value to convert
+* @return {string} comma separated rgb values
+*/
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+.wp-block-image figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-image figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}</style>
+<style id="wp-block-spacer-inline-css">/**
+ * Colors
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+*  Converts a hex value into the rgb equivalent.
+*
+* @param {string} hex - the hexadecimal value to convert
+* @return {string} comma separated rgb values
+*/
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+.wp-block-spacer {
+  clear: both;
+}</style>
+<style id="wp-block-post-title-inline-css">/**
+ * Colors
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+*  Converts a hex value into the rgb equivalent.
+*
+* @param {string} hex - the hexadecimal value to convert
+* @return {string} comma separated rgb values
+*/
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+.wp-block-post-title a {
+  display: inline-block;
+}</style>
+<style id="wp-block-post-featured-image-inline-css">/**
+ * Colors
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+*  Converts a hex value into the rgb equivalent.
+*
+* @param {string} hex - the hexadecimal value to convert
+* @return {string} comma separated rgb values
+*/
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+.wp-block-post-featured-image {
+  margin-left: 0;
+  margin-right: 0;
+}
+.wp-block-post-featured-image a {
+  display: inline-block;
+}
+.wp-block-post-featured-image img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+.wp-block-post-featured-image.alignwide img, .wp-block-post-featured-image.alignfull img {
+  width: 100%;
+}</style>
+<style id="wp-block-post-excerpt-inline-css">/**
+ * Colors
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+*  Converts a hex value into the rgb equivalent.
+*
+* @param {string} hex - the hexadecimal value to convert
+* @return {string} comma separated rgb values
+*/
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+.wp-block-post-excerpt__more-link {
+  display: inline-block;
+}</style>
+<link rel="stylesheet" id="wp-block-columns-css" href="./wp/wp-includes/blocks/columns/style.css?ver=5.9.2" media="all">
+<style id="wp-block-post-template-inline-css">/**
+ * Colors
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+*  Converts a hex value into the rgb equivalent.
+*
+* @param {string} hex - the hexadecimal value to convert
+* @return {string} comma separated rgb values
+*/
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+.wp-block-post-template,
+.wp-block-query-loop {
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 100%;
+  list-style: none;
+  padding: 0;
+}
+.wp-block-post-template.wp-block-post-template,
+.wp-block-query-loop.wp-block-post-template {
+  background: none;
+}
+.wp-block-post-template.is-flex-container,
+.wp-block-query-loop.is-flex-container {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25em;
+}
+.wp-block-post-template.is-flex-container li,
+.wp-block-query-loop.is-flex-container li {
+  margin: 0;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .wp-block-post-template.is-flex-container.is-flex-container.columns-2 > li,
+.wp-block-query-loop.is-flex-container.is-flex-container.columns-2 > li {
+    width: calc((100% / 2) - 1.25em + (1.25em / 2));
+  }
+  .wp-block-post-template.is-flex-container.is-flex-container.columns-3 > li,
+.wp-block-query-loop.is-flex-container.is-flex-container.columns-3 > li {
+    width: calc((100% / 3) - 1.25em + (1.25em / 3));
+  }
+  .wp-block-post-template.is-flex-container.is-flex-container.columns-4 > li,
+.wp-block-query-loop.is-flex-container.is-flex-container.columns-4 > li {
+    width: calc((100% / 4) - 1.25em + (1.25em / 4));
+  }
+  .wp-block-post-template.is-flex-container.is-flex-container.columns-5 > li,
+.wp-block-query-loop.is-flex-container.is-flex-container.columns-5 > li {
+    width: calc((100% / 5) - 1.25em + (1.25em / 5));
+  }
+  .wp-block-post-template.is-flex-container.is-flex-container.columns-6 > li,
+.wp-block-query-loop.is-flex-container.is-flex-container.columns-6 > li {
+    width: calc((100% / 6) - 1.25em + (1.25em / 6));
+  }
+}</style>
+<style id="wp-block-paragraph-inline-css">/**
+ * Colors
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+*  Converts a hex value into the rgb equivalent.
+*
+* @param {string} hex - the hexadecimal value to convert
+* @return {string} comma separated rgb values
+*/
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+.is-small-text {
+  font-size: 0.875em;
+}
+
+.is-regular-text {
+  font-size: 1em;
+}
+
+.is-large-text {
+  font-size: 2.25em;
+}
+
+.is-larger-text {
+  font-size: 3em;
+}
+
+.has-drop-cap:not(:focus)::first-letter {
+  float: left;
+  font-size: 8.4em;
+  line-height: 0.68;
+  font-weight: 100;
+  margin: 0.05em 0.1em 0 0;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+p {
+  overflow-wrap: break-word;
+}
+
+p.has-drop-cap.has-background {
+  overflow: hidden;
+}
+
+p.has-background {
+  padding: 1.25em 2.375em;
+}
+
+:where(p.has-text-color:not(.has-link-color)) a {
+  color: inherit;
+}</style>
+<style id="wp-block-query-pagination-inline-css">/**
+ * Colors
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+*  Converts a hex value into the rgb equivalent.
+*
+* @param {string} hex - the hexadecimal value to convert
+* @return {string} comma separated rgb values
+*/
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+.wp-block-query-pagination > .wp-block-query-pagination-next,
+.wp-block-query-pagination > .wp-block-query-pagination-previous,
+.wp-block-query-pagination > .wp-block-query-pagination-numbers {
+  /*rtl:ignore*/
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+}
+.wp-block-query-pagination > .wp-block-query-pagination-next:last-child,
+.wp-block-query-pagination > .wp-block-query-pagination-previous:last-child,
+.wp-block-query-pagination > .wp-block-query-pagination-numbers:last-child {
+  /*rtl:ignore*/
+  margin-right: 0;
+}
+.wp-block-query-pagination .wp-block-query-pagination-previous-arrow {
+  margin-right: 1ch;
+  display: inline-block;
+}
+.wp-block-query-pagination .wp-block-query-pagination-previous-arrow:not(.is-arrow-chevron) {
+  transform: scaleX(1) /*rtl:scaleX(-1);*/;
+}
+.wp-block-query-pagination .wp-block-query-pagination-next-arrow {
+  margin-left: 1ch;
+  display: inline-block;
+}
+.wp-block-query-pagination .wp-block-query-pagination-next-arrow:not(.is-arrow-chevron) {
+  transform: scaleX(1) /*rtl:scaleX(-1);*/;
+}
+.wp-block-query-pagination.aligncenter {
+  justify-content: center;
+}</style>
+<link rel="stylesheet" id="wp-block-library-css" href="./wp/wp-includes/css/dist/block-library/common.css?ver=5.9.2" media="all">
+<style id="global-styles-inline-css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--foreground: #000000;--wp--preset--color--background: #ffffff;--wp--preset--color--primary: #1a4548;--wp--preset--color--secondary: #ffe2c7;--wp--preset--color--tertiary: #F6F6F6;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--vertical-secondary-to-tertiary: linear-gradient(to bottom,var(--wp--preset--color--secondary) 0%,var(--wp--preset--color--tertiary) 100%);--wp--preset--gradient--vertical-secondary-to-background: linear-gradient(to bottom,var(--wp--preset--color--secondary) 0%,var(--wp--preset--color--background) 100%);--wp--preset--gradient--vertical-tertiary-to-background: linear-gradient(to bottom,var(--wp--preset--color--tertiary) 0%,var(--wp--preset--color--background) 100%);--wp--preset--gradient--diagonal-primary-to-foreground: linear-gradient(to bottom right,var(--wp--preset--color--primary) 0%,var(--wp--preset--color--foreground) 100%);--wp--preset--gradient--diagonal-secondary-to-background: linear-gradient(to bottom right,var(--wp--preset--color--secondary) 50%,var(--wp--preset--color--background) 50%);--wp--preset--gradient--diagonal-background-to-secondary: linear-gradient(to bottom right,var(--wp--preset--color--background) 50%,var(--wp--preset--color--secondary) 50%);--wp--preset--gradient--diagonal-tertiary-to-background: linear-gradient(to bottom right,var(--wp--preset--color--tertiary) 50%,var(--wp--preset--color--background) 50%);--wp--preset--gradient--diagonal-background-to-tertiary: linear-gradient(to bottom right,var(--wp--preset--color--background) 50%,var(--wp--preset--color--tertiary) 50%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--duotone--foreground-and-background: url('#wp-duotone-foreground-and-background');--wp--preset--duotone--foreground-and-secondary: url('#wp-duotone-foreground-and-secondary');--wp--preset--duotone--foreground-and-tertiary: url('#wp-duotone-foreground-and-tertiary');--wp--preset--duotone--primary-and-background: url('#wp-duotone-primary-and-background');--wp--preset--duotone--primary-and-secondary: url('#wp-duotone-primary-and-secondary');--wp--preset--duotone--primary-and-tertiary: url('#wp-duotone-primary-and-tertiary');--wp--preset--font-size--small: 1rem;--wp--preset--font-size--medium: 1.125rem;--wp--preset--font-size--large: 1.75rem;--wp--preset--font-size--x-large: clamp(1.75rem, 3vw, 2.25rem);--wp--preset--font-family--system-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--wp--preset--font-family--source-serif-pro: "Source Serif Pro", serif;--wp--custom--spacing--small: max(1.25rem, 5vw);--wp--custom--spacing--medium: clamp(2rem, 8vw, calc(4 * var(--wp--style--block-gap)));--wp--custom--spacing--large: clamp(4rem, 10vw, 8rem);--wp--custom--spacing--outer: var(--wp--custom--spacing--small, 1.25rem);--wp--custom--typography--font-size--huge: clamp(2.25rem, 4vw, 2.75rem);--wp--custom--typography--font-size--gigantic: clamp(2.75rem, 6vw, 3.25rem);--wp--custom--typography--font-size--colossal: clamp(3.25rem, 8vw, 6.25rem);--wp--custom--typography--line-height--tiny: 1.15;--wp--custom--typography--line-height--small: 1.2;--wp--custom--typography--line-height--medium: 1.4;--wp--custom--typography--line-height--normal: 1.6;}body { margin: 0; }body{background-color: var(--wp--preset--color--background);color: var(--wp--preset--color--foreground);font-family: var(--wp--preset--font-family--system-font);font-size: var(--wp--preset--font-size--medium);line-height: var(--wp--custom--typography--line-height--normal);--wp--style--block-gap: 1.5rem;}.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }.wp-site-blocks > * { margin-top: 0; margin-bottom: 0; }.wp-site-blocks > * + * { margin-top: var( --wp--style--block-gap ); }h1{font-family: var(--wp--preset--font-family--source-serif-pro);font-size: var(--wp--custom--typography--font-size--colossal);font-weight: 300;line-height: var(--wp--custom--typography--line-height--tiny);}h2{font-family: var(--wp--preset--font-family--source-serif-pro);font-size: var(--wp--custom--typography--font-size--gigantic);font-weight: 300;line-height: var(--wp--custom--typography--line-height--small);}h3{font-family: var(--wp--preset--font-family--source-serif-pro);font-size: var(--wp--custom--typography--font-size--huge);font-weight: 300;line-height: var(--wp--custom--typography--line-height--tiny);}h4{font-family: var(--wp--preset--font-family--source-serif-pro);font-size: var(--wp--preset--font-size--x-large);font-weight: 300;line-height: var(--wp--custom--typography--line-height--tiny);}h5{font-family: var(--wp--preset--font-family--system-font);font-size: var(--wp--preset--font-size--medium);font-weight: 700;line-height: var(--wp--custom--typography--line-height--normal);text-transform: uppercase;}h6{font-family: var(--wp--preset--font-family--system-font);font-size: var(--wp--preset--font-size--medium);font-weight: 400;line-height: var(--wp--custom--typography--line-height--normal);text-transform: uppercase;}a{color: var(--wp--preset--color--foreground);}.wp-block-button__link{background-color: var(--wp--preset--color--primary);border-radius: 0;color: var(--wp--preset--color--background);font-size: var(--wp--preset--font-size--medium);}.wp-block-post-title{font-family: var(--wp--preset--font-family--source-serif-pro);font-size: var(--wp--custom--typography--font-size--gigantic);font-weight: 300;line-height: var(--wp--custom--typography--line-height--tiny);}.wp-block-post-comments{padding-top: var(--wp--custom--spacing--small);}.wp-block-pullquote{border-width: 1px 0;}.wp-block-query-title{font-family: var(--wp--preset--font-family--source-serif-pro);font-size: var(--wp--custom--typography--font-size--gigantic);font-weight: 300;line-height: var(--wp--custom--typography--line-height--small);}.wp-block-quote{border-width: 1px;}.wp-block-site-title{font-family: var(--wp--preset--font-family--system-font);font-size: var(--wp--preset--font-size--medium);font-weight: normal;line-height: var(--wp--custom--typography--line-height--normal);}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-foreground-color{color: var(--wp--preset--color--foreground) !important;}.has-background-color{color: var(--wp--preset--color--background) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-tertiary-color{color: var(--wp--preset--color--tertiary) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-foreground-background-color{background-color: var(--wp--preset--color--foreground) !important;}.has-background-background-color{background-color: var(--wp--preset--color--background) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-background-color{background-color: var(--wp--preset--color--tertiary) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-foreground-border-color{border-color: var(--wp--preset--color--foreground) !important;}.has-background-border-color{border-color: var(--wp--preset--color--background) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-border-color{border-color: var(--wp--preset--color--tertiary) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-vertical-secondary-to-tertiary-gradient-background{background: var(--wp--preset--gradient--vertical-secondary-to-tertiary) !important;}.has-vertical-secondary-to-background-gradient-background{background: var(--wp--preset--gradient--vertical-secondary-to-background) !important;}.has-vertical-tertiary-to-background-gradient-background{background: var(--wp--preset--gradient--vertical-tertiary-to-background) !important;}.has-diagonal-primary-to-foreground-gradient-background{background: var(--wp--preset--gradient--diagonal-primary-to-foreground) !important;}.has-diagonal-secondary-to-background-gradient-background{background: var(--wp--preset--gradient--diagonal-secondary-to-background) !important;}.has-diagonal-background-to-secondary-gradient-background{background: var(--wp--preset--gradient--diagonal-background-to-secondary) !important;}.has-diagonal-tertiary-to-background-gradient-background{background: var(--wp--preset--gradient--diagonal-tertiary-to-background) !important;}.has-diagonal-background-to-tertiary-gradient-background{background: var(--wp--preset--gradient--diagonal-background-to-tertiary) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-system-font-font-family{font-family: var(--wp--preset--font-family--system-font) !important;}.has-source-serif-pro-font-family{font-family: var(--wp--preset--font-family--source-serif-pro) !important;}</style>
+<link rel="stylesheet" id="twentytwentytwo-style-css" href="./app/themes/twentytwentytwo/style.css?ver=1.1" media="all">
+<style id="twentytwentytwo-style-inline-css">@font-face{
+			font-family: 'Source Serif Pro';
+			font-weight: 200 900;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+			src: url('./app/themes/twentytwentytwo/assets/fonts/SourceSerif4Variable-Roman.ttf.woff2') format('woff2');
+		}
+
+		@font-face{
+			font-family: 'Source Serif Pro';
+			font-weight: 200 900;
+			font-style: italic;
+			font-stretch: normal;
+			font-display: swap;
+			src: url('./app/themes/twentytwentytwo/assets/fonts/SourceSerif4Variable-Italic.ttf.woff2') format('woff2');
+		}</style>
+<script src="./wp/wp-includes/blocks/navigation/view.min.js?ver=3776ea67846b3bb10fe8f7cdd486b0ba" id="wp-block-navigation-view-js"></script>
 <script src="./app/mu-plugins/query-monitor-twig-profile/assets/save.js?ver=1.3.1" id="qm-twig-profile-js"></script>
 <script id="qm-twig-profile-component-js-extra">
 var qm_twig_profile_l10n = {"strings":{"save_current":"Save current request","saved":"The current request has been saved!","controls":"Controls","viewing_profile":"Viewing profile:","profile_name":"Profile name","select_profile":"Select a (saved) profile:","current_request":"Current request","view":"View","remove":"Remove","clear_all":"Clear all saved profiles"}};
@@ -35,499 +1250,618 @@ var qm_twig_profile_l10n = {"strings":{"save_current":"Save current request","sa
 
 					<meta name="ssp-config-url" content="/wp-content/plugins/simply-static-pro/configs/">
 		
-				
-    </head>
+						<link rel="preload" href="./app/themes/twentytwentytwo/assets/fonts/SourceSerif4Variable-Roman.ttf.woff2" as="font" type="font/woff2" crossorigin>
+		</head>
 
-    <body class="home blog">
-            <a is="skip-content" href="#main" class="skip-to-content region">
-    <span class="content">Skip to content</span>
-</a>
+<body class="home blog wp-embed-responsive">
 
-    
-<header is="org-page-header" id="page-header">
-    <div class="content">
-        <div class="masthead">
-            <a class="logo" href="./index.html">    <span class="visually-hidden">NWEA</span>
-</a>
+	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-dark-grayscale">
+				<fecolormatrix color-interpolation-filters="sRGB" type="matrix" values="
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+					"></fecolormatrix>
+				<fecomponenttransfer color-interpolation-filters="sRGB">
+					<fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr>
+					<fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg>
+					<fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb>
+					<fefunca type="table" tablevalues="1 1"></fefunca>
+				</fecomponenttransfer>
+				<fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+			</filter>
+		</defs>
+	</svg>
 
-            <button id="nav-button" class="nav-toggle">Menu</button>
-        </div>
-        <nav class="utility-navigation">
-    <ul>
-        <li class="nav-item"><a aria-label="About" href="#">About</a></li>
-        <li class="nav-item"><a aria-label="Support" href="#">Support</a></li>
-        <li class="nav-item"><a aria-label="Login" href="#">Login</a></li>
-        <li class="nav-item"><a aria-label="Contact Us" href="#">Contact Us</a></li>
-    </ul>
-</nav>
+	
+	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-grayscale">
+				<fecolormatrix color-interpolation-filters="sRGB" type="matrix" values="
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+					"></fecolormatrix>
+				<fecomponenttransfer color-interpolation-filters="sRGB">
+					<fefuncr type="table" tablevalues="0 1"></fefuncr>
+					<fefuncg type="table" tablevalues="0 1"></fefuncg>
+					<fefuncb type="table" tablevalues="0 1"></fefuncb>
+					<fefunca type="table" tablevalues="1 1"></fefunca>
+				</fecomponenttransfer>
+				<fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+			</filter>
+		</defs>
+	</svg>
 
-        <form class="site-search">
-    <label>
-        <span class="visually-hidden">Search</span>
-        <input type="search" placeholder="Search" required="required" autocomplete="off" spellcheck="false" autocorrect="false">
-    </label>
-    <button class="search-button">
-        <span class="visually-hidden">Search</span>
-    </button>
-</form>
+	
+	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-purple-yellow">
+				<fecolormatrix color-interpolation-filters="sRGB" type="matrix" values="
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+					"></fecolormatrix>
+				<fecomponenttransfer color-interpolation-filters="sRGB">
+					<fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr>
+					<fefuncg type="table" tablevalues="0 1"></fefuncg>
+					<fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb>
+					<fefunca type="table" tablevalues="1 1"></fefunca>
+				</fecomponenttransfer>
+				<fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+			</filter>
+		</defs>
+	</svg>
 
-        <nav id="top-level-navigation" class="top-level-navigation" aria-label="Primary">
-    <ul>
-        <li class="nav-item">
-            <a aria-label="Assessment" href="#" id="assessment"><span>Assessment</span></a>
-            <div class="child-items">
-                <section>
-                    <h2 class="label visually-hidden">Products</h2>
-                    <ul>
-                        <li class="child-item">
-                            <a aria-label="The MAP Suite" href="#"><span>The MAP Suite</span></a>
-                            <ul>
-                                <li class="child-item">
-                                    <a aria-label="MAP Growth" href="https://localhost/hello-world/">
-                                        MAP Growth
-                                        <p class="child-item-description">This is a description of MAP Growth</p>
-                                        <span class="child-auxiliary-info">K-12</span>
-                                    </a>
-                                </li>
-                                <li class="child-item">
-                                    <a aria-label="MAP Accelerator" href="#">
-                                        MAP Accelerator
-                                        <span class="child-auxiliary-info">K-3 Math</span>
-                                    </a>
-                                </li>
-                                <li class="child-item">
-                                    <a aria-label="MAP Reading Fluency" href="#">
-                                        MAP Reading Fluency
-                                        <span class="child-auxiliary-info">K-3 Reading</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Through year" href="#"><span>Through year</span></a>
-                        </li>
-                    </ul>
-                </section>
-                <section>
-                    <h2 class="label">Resources</h2>
-                    <ul>
-                        <li class="child-item">
-                            <a aria-label="Resource Library" href="#"><span>Resource Library</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Restart Resources" href="#"><span>Restart Resources</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Teacher Toolkit" href="#"><span>Teacher Toolkit</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Family Toolkit" href="#"><span>Family Toolkit</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="RIT &amp; Normative Data" href="#"><span>RIT &amp; Normative Data</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Instructional Connections" href="#"><span>Instructional Connections</span></a>
-                        </li>
-                    </ul>
-                </section>
-                <aside>
-                    <h2 class="label">Sales</h2>
-                    <ul>
-                        <li><a aria-label="Contact us form" class="minor" href="#"><span>Contact us form</span></a></li>
-                        <li>
-                            <dl class="minor">
-                                <dt>Domestic:</dt>
-                                <dd><a href="tel:+18774693278"><span>1-877-469-3278</span></a></dd>
-                            </dl>
-                        </li>
-                    </ul>
-                    <h2 class="label">Support</h2>
-                    <ul>
-                        <li><a aria-label="NWEA Connection" href="#"><span>NWEA Connection</span></a></li>
-                        <li><a aria-label="Chat with an agent" href="#"><span>Chat with an agent</span></a></li>
-                        <li>
-                            <h3 class="label">Call</h3>
-                            <dl class="minor">
-                                <dt>Domestic:</dt>
-                                <dd>
-                                    <a aria-label="1-877-469-3278" href="tel:+18774693278"><span>1-877-469-3278</span></a>
-                                    <p>Mon&thinsp;&ndash;&thinsp;Fri 4am&thinsp;&ndash;&thinsp;5pm PST</p>
-                                </dd>
-                            </dl>
+	
+	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-blue-red">
+				<fecolormatrix color-interpolation-filters="sRGB" type="matrix" values="
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+					"></fecolormatrix>
+				<fecomponenttransfer color-interpolation-filters="sRGB">
+					<fefuncr type="table" tablevalues="0 1"></fefuncr>
+					<fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg>
+					<fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb>
+					<fefunca type="table" tablevalues="1 1"></fefunca>
+				</fecomponenttransfer>
+				<fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+			</filter>
+		</defs>
+	</svg>
 
-                            <dl class="minor">
-                                <dt>International:</dt>
-                                <dd>
-                                    <a aria-label="1-877-469-3278" href="tel:+18774693278"><span>1-877-469-3278</span></a>
-                                    <p>Mon&thinsp;&ndash;&thinsp;Fri 4am&thinsp;&ndash;&thinsp;5pm PST</p>
-                                </dd>
-                            </dl>
-                        </li>
-                    </ul>
-                </aside>
-            </div>
-        </li>
-        <li class="nav-item">
-            <a aria-label="Solutions" href="#"><span>Solutions</span></a>
-            <div class="child-items">
-                <section>
-                    <h2 class="label">For</h2>
-                    <ul>
-                        <li class="child-item">
-                            <a aria-label="States" href="#"><span>States</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Districts" href="#"><span>Districts</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Schools" href="#"><span>Schools</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Foundations" href="#"><span>Foundations</span></a>
-                        </li>
-                    </ul>
-                </section>
-                <section>
-                    <h2 class="label">Resources</h2>
-                    <ul>
-                        <li class="child-item">
-                            <a aria-label="Instructional connections" href="#"><span>Instructional connections</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Resource Library" href="#"><span>Resource Library</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Teach.Learn.Grow Blog" href="#"><span>Teach.Learn.Grow Blog</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Research Center" href="#"><span>Research Center</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Events" href="#"><span>Events</span></a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-        </li>
-        <li class="nav-item">
-            <a aria-label="Learning &amp; Improvement" href="#"><span>Learning &amp; Improvement</span></a>
-            <div class="child-items">
-                <section>
-                    <h2 class="label visually-hidden">Learning</h2>
-                    <ul>
-                        <li class="child-item">
-                            <a aria-label="Professional Learning" href="#">
-                                Professional Learning
-                                <p class="child-item-description">This is a description of Professional Learning This is a description of Professional Learning</p>
-                            </a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Using NWEA Assessments and Data" href="#"><span>Using NWEA Assessments and Data</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Formative Instructional Practice" href="#"><span>Formative Instructional Practice</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Data Coaching and Consulting" href="#"><span>Data Coaching and Consulting</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Offering Four" href="#"><span>Offering Four</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Offering Five" href="#"><span>Offering Five</span></a>
-                        </li>
-                    </ul>
-                </section>
-                <section>
-                    <h2 class="label visually-hidden">Improvement</h2>
-                    <ul>
-                        <li class="child-item">
-                            <a aria-label="School Improvement" href="#">
-                                School Improvement
-                                <p class="child-item-description">This is a description of School Improvement</p>
-                            </a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Research Consultation" href="#"><span>Research Consultation</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="XXX Consultation" href="#"><span>XXX Consultation</span></a>
-                        </li>
-                    </ul>
-                </section>
-                <section>
-                    <h2 class="label">Resources</h2>
-                    <ul>
-                        <li class="child-item">
-                            <a aria-label="Resource Library" href="#"><span>Resource Library</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Teach.Learn.Grow Blog" href="#"><span>Teach.Learn.Grow Blog</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Research Center" href="#"><span>Research Center</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Fusion" href="#"><span>Fusion</span></a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-        </li>
-        <li class="nav-item">
-            <a id="research-nav-item" aria-label="Research &amp; Expertise" href="#"><span>Research &amp; Expertise</span></a>
-            <div class="child-items">
-                <section aria-labelledby="research-nav-item">
-                    <ul>
-                        <li class="child-item">
-                            <a aria-label="Overview" href="#"><span>Overview</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Center for School &amp; Student Progress" href="#"><span>Center for School &amp; Student Progress</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Collaborative for Student Growth" href="#"><span>Collaborative for Student Growth</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Measurement &amp; Psychometrics" href="#"><span>Measurement &amp; Psychometrics</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Academic Content" href="#"><span>Academic Content</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Expertise" href="#"><span>Expertise</span></a>
-                        </li>
-                    </ul>
-                </section>
-                <section>
-                    <h2 class="label">Resources</h2>
-                    <ul>
-                        <li class="child-item">
-                            <a aria-label="Publication" href="#"><span>Publication</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Partnerships" href="#"><span>Partnerships</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Kingsbury Research Award" href="#"><span>Kingsbury Research Award</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Research Vizualization" href="#"><span>Research Vizualization</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Research Consultation" href="#"><span>Research Consultation</span></a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-        </li>
-        <li class="nav-item">
-            <a id="resources-nav-item" aria-label="Resources" href="#"><span>Resources</span></a>
-            <div class="child-items">
-                <section aria-labelledby="resources-nav-item">
-                    <ul>
-                        <li class="child-item">
-                            <a aria-label="Resource Library" href="#"><span>Resource Library</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Teach.Learn.Grow Blog" href="#"><span>Teach.Learn.Grow Blog</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Research Center" href="#"><span>Research Center</span></a>
-                        </li>
-                    </ul>
-                </section>
-                <section>
-                    <h2 class="label">MAP Growth</h2>
-                    <ul>
-                        <li class="child-item">
-                            <a aria-label="Teacher Toolkit" href="#"><span>Teacher Toolkit</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Parent Toolkit" href="#"><span>Parent Toolkit</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="RIT &amp; Normative Data" href="#"><span>RIT &amp; Normative Data</span></a>
-                        </li>
-                        <li class="child-item">
-                            <a aria-label="Instructional Connections" href="#"><span>Instructional Connections</span></a>
-                        </li>
-                    </ul>
-                </section>
-                <aside>
-                    <h2 class="label">Sales</h2>
-                    <ul>
-                        <li><a aria-label="Contact us form" class="minor" href="#"><span>Contact us form</span></a></li>
-                        <li>
-                            <dl class="minor">
-                                <dt>Domestic:</dt>
-                                <dd><a href="tel:+18774693278"><span>1-877-469-3278</span></a></dd>
-                            </dl>
-                        </li>
-                    </ul>
-                    <h2 class="label">Support</h2>
-                    <ul>
-                        <li><a aria-label="NWEA Connection" href="#"><span>NWEA Connection</span></a></li>
-                        <li><a aria-label="Chat with an agent" href="#"><span>Chat with an agent</span></a></li>
-                        <li>
-                            <h3 class="label">Call</h3>
-                            <dl class="minor">
-                                <dt>Domestic:</dt>
-                                <dd>
-                                    <a aria-label="1-877-469-3278" href="tel:+18774693278"><span>1-877-469-3278</span></a>
-                                    <p>Mon&thinsp;&ndash;&thinsp;Fri 4am&thinsp;&ndash;&thinsp;5pm PST</p>
-                                </dd>
-                            </dl>
+	
+	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-midnight">
+				<fecolormatrix color-interpolation-filters="sRGB" type="matrix" values="
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+					"></fecolormatrix>
+				<fecomponenttransfer color-interpolation-filters="sRGB">
+					<fefuncr type="table" tablevalues="0 0"></fefuncr>
+					<fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg>
+					<fefuncb type="table" tablevalues="0 1"></fefuncb>
+					<fefunca type="table" tablevalues="1 1"></fefunca>
+				</fecomponenttransfer>
+				<fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+			</filter>
+		</defs>
+	</svg>
 
-                            <dl class="minor">
-                                <dt>International:</dt>
-                                <dd>
-                                    <a aria-label="1-877-469-3278" href="tel:+18774693278"><span>1-877-469-3278</span></a>
-                                    <p>Mon&thinsp;&ndash;&thinsp;Fri 4am&thinsp;&ndash;&thinsp;5pm PST</p>
-                                </dd>
-                            </dl>
-                        </li>
-                    </ul>
-                </aside>
-            </div>
-        </li>
-    </ul>
-</nav>
+	
+	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-magenta-yellow">
+				<fecolormatrix color-interpolation-filters="sRGB" type="matrix" values="
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+					"></fecolormatrix>
+				<fecomponenttransfer color-interpolation-filters="sRGB">
+					<fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr>
+					<fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg>
+					<fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb>
+					<fefunca type="table" tablevalues="1 1"></fefunca>
+				</fecomponenttransfer>
+				<fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+			</filter>
+		</defs>
+	</svg>
 
-    </div>
+	
+	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-purple-green">
+				<fecolormatrix color-interpolation-filters="sRGB" type="matrix" values="
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+					"></fecolormatrix>
+				<fecomponenttransfer color-interpolation-filters="sRGB">
+					<fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr>
+					<fefuncg type="table" tablevalues="0 1"></fefuncg>
+					<fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb>
+					<fefunca type="table" tablevalues="1 1"></fefunca>
+				</fecomponenttransfer>
+				<fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+			</filter>
+		</defs>
+	</svg>
+
+	
+	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-blue-orange">
+				<fecolormatrix color-interpolation-filters="sRGB" type="matrix" values="
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+					"></fecolormatrix>
+				<fecomponenttransfer color-interpolation-filters="sRGB">
+					<fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr>
+					<fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg>
+					<fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb>
+					<fefunca type="table" tablevalues="1 1"></fefunca>
+				</fecomponenttransfer>
+				<fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+			</filter>
+		</defs>
+	</svg>
+
+	
+	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-foreground-and-background">
+				<fecolormatrix color-interpolation-filters="sRGB" type="matrix" values="
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+					"></fecolormatrix>
+				<fecomponenttransfer color-interpolation-filters="sRGB">
+					<fefuncr type="table" tablevalues="0 1"></fefuncr>
+					<fefuncg type="table" tablevalues="0 1"></fefuncg>
+					<fefuncb type="table" tablevalues="0 1"></fefuncb>
+					<fefunca type="table" tablevalues="1 1"></fefunca>
+				</fecomponenttransfer>
+				<fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+			</filter>
+		</defs>
+	</svg>
+
+	
+	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-foreground-and-secondary">
+				<fecolormatrix color-interpolation-filters="sRGB" type="matrix" values="
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+					"></fecolormatrix>
+				<fecomponenttransfer color-interpolation-filters="sRGB">
+					<fefuncr type="table" tablevalues="0 1"></fefuncr>
+					<fefuncg type="table" tablevalues="0 0.88627450980392"></fefuncg>
+					<fefuncb type="table" tablevalues="0 0.78039215686275"></fefuncb>
+					<fefunca type="table" tablevalues="1 1"></fefunca>
+				</fecomponenttransfer>
+				<fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+			</filter>
+		</defs>
+	</svg>
+
+	
+	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-foreground-and-tertiary">
+				<fecolormatrix color-interpolation-filters="sRGB" type="matrix" values="
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+					"></fecolormatrix>
+				<fecomponenttransfer color-interpolation-filters="sRGB">
+					<fefuncr type="table" tablevalues="0 0.96470588235294"></fefuncr>
+					<fefuncg type="table" tablevalues="0 0.96470588235294"></fefuncg>
+					<fefuncb type="table" tablevalues="0 0.96470588235294"></fefuncb>
+					<fefunca type="table" tablevalues="1 1"></fefunca>
+				</fecomponenttransfer>
+				<fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+			</filter>
+		</defs>
+	</svg>
+
+	
+	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-primary-and-background">
+				<fecolormatrix color-interpolation-filters="sRGB" type="matrix" values="
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+					"></fecolormatrix>
+				<fecomponenttransfer color-interpolation-filters="sRGB">
+					<fefuncr type="table" tablevalues="0.10196078431373 1"></fefuncr>
+					<fefuncg type="table" tablevalues="0.27058823529412 1"></fefuncg>
+					<fefuncb type="table" tablevalues="0.28235294117647 1"></fefuncb>
+					<fefunca type="table" tablevalues="1 1"></fefunca>
+				</fecomponenttransfer>
+				<fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+			</filter>
+		</defs>
+	</svg>
+
+	
+	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-primary-and-secondary">
+				<fecolormatrix color-interpolation-filters="sRGB" type="matrix" values="
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+					"></fecolormatrix>
+				<fecomponenttransfer color-interpolation-filters="sRGB">
+					<fefuncr type="table" tablevalues="0.10196078431373 1"></fefuncr>
+					<fefuncg type="table" tablevalues="0.27058823529412 0.88627450980392"></fefuncg>
+					<fefuncb type="table" tablevalues="0.28235294117647 0.78039215686275"></fefuncb>
+					<fefunca type="table" tablevalues="1 1"></fefunca>
+				</fecomponenttransfer>
+				<fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+			</filter>
+		</defs>
+	</svg>
+
+	
+	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-primary-and-tertiary">
+				<fecolormatrix color-interpolation-filters="sRGB" type="matrix" values="
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+					"></fecolormatrix>
+				<fecomponenttransfer color-interpolation-filters="sRGB">
+					<fefuncr type="table" tablevalues="0.10196078431373 0.96470588235294"></fefuncr>
+					<fefuncg type="table" tablevalues="0.27058823529412 0.96470588235294"></fefuncg>
+					<fefuncb type="table" tablevalues="0.28235294117647 0.96470588235294"></fefuncb>
+					<fefunca type="table" tablevalues="1 1"></fefunca>
+				</fecomponenttransfer>
+				<fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+			</filter>
+		</defs>
+	</svg>
+
+	
+<div class="wp-site-blocks">
+<header class="wp-block-template-part">
+<div class="wp-container-624373be6e774 wp-elements-624373be6cb8f wp-block-group alignfull has-background-color has-foreground-background-color has-text-color has-background has-link-color" style="padding-top:0px;padding-bottom:0px">
+<header class="alignwide wp-block-template-part">
+<div class="wp-container-624373be6bf6a wp-block-group">
+<div class="wp-container-624373be6a47e wp-block-group alignwide" style="padding-top:var(--wp--custom--spacing--small, 1.25rem);padding-bottom:var(--wp--custom--spacing--large, 8rem)">
+<div class="wp-container-624373be64ae4 wp-block-group">
+
+<h1 style="font-style:italic; font-weight:400;" class="wp-block-site-title"><a href="./index.html" rel="home" aria-current="page">NWEA Dev Local</a></h1>
+</div>
+
+
+<nav class="wp-container-624373be687e1 is-responsive items-justified-right wp-block-navigation"><button aria-haspopup="true" aria-label="Open menu" class="wp-block-navigation__responsive-container-open " data-micromodal-trigger="modal-624373be66c21"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" role="img" aria-hidden="true" focusable="false"><rect x="4" y="7.5" width="16" height="1.5"></rect><rect x="4" y="15" width="16" height="1.5"></rect></svg></button>
+			<div class="wp-block-navigation__responsive-container  " id="modal-624373be66c21">
+				<div class="wp-block-navigation__responsive-close" tabindex="-1" data-micromodal-close>
+					<div class="wp-block-navigation__responsive-dialog" aria-label="Menu">
+							<button aria-label="Close menu" data-micromodal-close class="wp-block-navigation__responsive-container-close"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="24" height="24" role="img" aria-hidden="true" focusable="false"><path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path></svg></button>
+						<div class="wp-block-navigation__responsive-container-content" id="modal-624373be66c21-content">
+							<ul class="wp-block-page-list">
+<li class="wp-block-pages-list__item wp-block-navigation-item open-on-hover-click"><a class="wp-block-pages-list__item__link wp-block-navigation-item__content" href="./my-new-page/index.html">My New Page</a></li>
+<li class="wp-block-pages-list__item wp-block-navigation-item open-on-hover-click"><a class="wp-block-pages-list__item__link wp-block-navigation-item__content" href="./my-new-test-page/index.html">My New Test Page</a></li>
+<li class="wp-block-pages-list__item wp-block-navigation-item open-on-hover-click"><a class="wp-block-pages-list__item__link wp-block-navigation-item__content" href="./sample-page/index.html">Sample Page</a></li>
+<li class="wp-block-pages-list__item wp-block-navigation-item open-on-hover-click"><a class="wp-block-pages-list__item__link wp-block-navigation-item__content" href="./test-page/index.html">Test Page Is Updated</a></li>
+</ul>
+						</div>
+					</div>
+				</div>
+			</div></nav>
+</div>
+</div>
 </header>
 
-            
 
-            <main id="main">
-            <h1></h1>
+					<figure class="wp-block-image alignwide size-full"><img src="./app/themes/twentytwentytwo/assets/images/flight-path-on-transparent-d.png" alt="Illustration of a bird flying."></figure>
+					</div>
 
-    <div class="typography">
-        
-    </div>
+<div style="height:66px" aria-hidden="true" class="wp-block-spacer"></div>
 
-            <ul class="posts">
-                            <li class="posts__item">
-                    <article class="post">
-                        <h1><a href="./hello-world/index.html">Hello world!</a></h1>
-                        <div>
-                            
-<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+</header>
 
-                        </div>
-                    </article>
-                </li>
-                            <li class="posts__item">
-                    <article class="post">
-                        <h1><a href="./media-mention-some-cool-mention/index.html">Media Mention: Some Cool Mention</a></h1>
-                        <div>
-                            
-                        </div>
-                    </article>
-                </li>
-                            <li class="posts__item">
-                    <article class="post">
-                        <h1><a href="./media-mention-my-uncool-mention/index.html">Media Mention: My Uncool Mention</a></h1>
-                        <div>
-                            
-                        </div>
-                    </article>
-                </li>
-                            <li class="posts__item">
-                    <article class="post">
-                        <h1><a href="./new-post-1/index.html">New Post 1</a></h1>
-                        <div>
-                            
-                        </div>
-                    </article>
-                </li>
-                            <li class="posts__item">
-                    <article class="post">
-                        <h1><a href="./new-post-2/index.html">New Post 2</a></h1>
-                        <div>
-                            
-                        </div>
-                    </article>
-                </li>
-                            <li class="posts__item">
-                    <article class="post">
-                        <h1><a href="./new-post-3/index.html">New Post 3</a></h1>
-                        <div>
-                            
-                        </div>
-                    </article>
-                </li>
-                            <li class="posts__item">
-                    <article class="post">
-                        <h1><a href="./page-is-published/index.html">This Page has been updated</a></h1>
-                        <div>
-                            
-                        </div>
-                    </article>
-                </li>
-                    </ul>
-        </main>
 
-            <footer is="org-page-footer" class="content-module">
-    <div class="primary region">
-        <div class="content">
-            <nav class="footer-navigation component" aria-label="Footer">
-    <ul>
-                <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Blog</a></li>
-    </ul>
-</nav>
-            <section class="newsletter-sign-up component">
-        <h2>Stay Current</h2>
-    <p>by subscribing to our newsletter</p>
-    <button class="standout call-to-action secondary btn">Sign me up</button>
-</section>
-        </div>
-    </div>
+<main class="wp-container-624373be8d13d wp-block-query"><ul class="wp-container-624373be8a561 alignwide wp-block-post-template">
+<li class="wp-block-post post-29 post type-post status-publish format-standard hentry category-uncategorized">
 
-    <div class="secondary region">
-        <div class="colophon content">
-    <p class="legal small-print"><a href="#">Privacy &amp; Terms of Use</a></p>
-    <div class="license small-print">
-                <small>Illustrations © 2017 Adam Simpson and Heart</small>
-    </div>
-    <div class="contact small-print">
-                <dl vocab="http://schema.org/" typeof="NGO">
-            <span property="name">NWEA</span>
-            <div>
-                <dt>
-<abbr title="Headquarters">HQ</abbr>:</dt>
-                <dd resource="nwea-postal-address" typeof="PostalAddress">
-                    <span property="streetAddress">121 NW Everett Street</span>,<br>
-                    <span property="addressLocality">Portland</span>,<br>
-                    <span property="addressRegion">OR</span> <span property="postalCode">97209</span><br>
-                    <span property="addressCountry">United States</span>
-                </dd>
-            </div>
-            <div>
-                <dt>Sales:</dt>
-                <dd property="telephone" resource="sales-phone-number">
-                    <a href="tel:+18666543246">866-654-3246</a>
-                </dd>
-            </div>
-            <div>
-                <dt>Support:</dt>
-                <dd property="telephone" resource="support-phone-number">
-                    <a href="tel:+18774693287">877-469-3287</a>
-                </dd>
-            </div>
-        </dl>
-    </div>
+<div class="wp-container-624373be7365b wp-container-624373be71fd7 wp-block-group">
+<h2 class="alignwide wp-block-post-title has-var-wp-custom-typography-font-size-huge-clamp-2-25-rem-4-vw-2-75-rem-font-size"><a href="./page-is-published/index.html" target="_self" rel="">This Page has been updated</a></h2>
+
+
+
+
+<div class="wp-block-columns alignwide">
+<div class="wp-block-column" style="flex-basis:650px">
+<div class="wp-block-post-excerpt"><p class="wp-block-post-excerpt__excerpt">[flyntTheContent id=&#8221;29&#8243;] </p></div>
+
+<div style="font-style:italic; font-weight:400;" class="wp-block-post-date has-small-font-size"><time datetime="2022-03-29T20:51:14+00:00"><a href="./page-is-published/index.html">March 29, 2022</a></time></div>
 </div>
-    </div>
-</footer>
 
-            
-    		<span class="ssp-id" style="display:none">29</span>
-		
-    </body>
+
+
+<div class="wp-block-column"></div>
+</div>
+
+
+
+<div style="height:112px" aria-hidden="true" class="wp-block-spacer"></div>
+</div>
+
+</li>
+<li class="wp-block-post post-20 post type-post status-publish format-standard hentry category-uncategorized">
+
+<div class="wp-container-624373be76ebb wp-container-624373be7568a wp-block-group">
+<h2 class="alignwide wp-block-post-title has-var-wp-custom-typography-font-size-huge-clamp-2-25-rem-4-vw-2-75-rem-font-size"><a href="./new-post-3/index.html" target="_self" rel="">New Post 3</a></h2>
+
+
+
+
+<div class="wp-block-columns alignwide">
+<div class="wp-block-column" style="flex-basis:650px">
+<div class="wp-block-post-excerpt"><p class="wp-block-post-excerpt__excerpt">[flyntTheContent id=&#8221;20&#8243;] </p></div>
+
+<div style="font-style:italic; font-weight:400;" class="wp-block-post-date has-small-font-size"><time datetime="2022-03-24T22:55:36+00:00"><a href="./new-post-3/index.html">March 24, 2022</a></time></div>
+</div>
+
+
+
+<div class="wp-block-column"></div>
+</div>
+
+
+
+<div style="height:112px" aria-hidden="true" class="wp-block-spacer"></div>
+</div>
+
+</li>
+<li class="wp-block-post post-18 post type-post status-publish format-standard hentry category-uncategorized">
+
+<div class="wp-container-624373be7a0dd wp-container-624373be78aa4 wp-block-group">
+<h2 class="alignwide wp-block-post-title has-var-wp-custom-typography-font-size-huge-clamp-2-25-rem-4-vw-2-75-rem-font-size"><a href="./new-post-2/index.html" target="_self" rel="">New Post 2</a></h2>
+
+
+
+
+<div class="wp-block-columns alignwide">
+<div class="wp-block-column" style="flex-basis:650px">
+<div class="wp-block-post-excerpt"><p class="wp-block-post-excerpt__excerpt">[flyntTheContent id=&#8221;18&#8243;] </p></div>
+
+<div style="font-style:italic; font-weight:400;" class="wp-block-post-date has-small-font-size"><time datetime="2022-03-24T22:55:10+00:00"><a href="./new-post-2/index.html">March 24, 2022</a></time></div>
+</div>
+
+
+
+<div class="wp-block-column"></div>
+</div>
+
+
+
+<div style="height:112px" aria-hidden="true" class="wp-block-spacer"></div>
+</div>
+
+</li>
+<li class="wp-block-post post-16 post type-post status-publish format-standard hentry category-uncategorized">
+
+<div class="wp-container-624373be7dcd2 wp-container-624373be7c671 wp-block-group">
+<h2 class="alignwide wp-block-post-title has-var-wp-custom-typography-font-size-huge-clamp-2-25-rem-4-vw-2-75-rem-font-size"><a href="./new-post-1/index.html" target="_self" rel="">New Post 1</a></h2>
+
+
+
+
+<div class="wp-block-columns alignwide">
+<div class="wp-block-column" style="flex-basis:650px">
+<div class="wp-block-post-excerpt"><p class="wp-block-post-excerpt__excerpt">[flyntTheContent id=&#8221;16&#8243;] </p></div>
+
+<div style="font-style:italic; font-weight:400;" class="wp-block-post-date has-small-font-size"><time datetime="2022-03-24T22:55:01+00:00"><a href="./new-post-1/index.html">March 24, 2022</a></time></div>
+</div>
+
+
+
+<div class="wp-block-column"></div>
+</div>
+
+
+
+<div style="height:112px" aria-hidden="true" class="wp-block-spacer"></div>
+</div>
+
+</li>
+<li class="wp-block-post post-14 post type-post status-publish format-standard hentry category-uncategorized">
+
+<div class="wp-container-624373be811e9 wp-container-624373be7ffad wp-block-group">
+<h2 class="alignwide wp-block-post-title has-var-wp-custom-typography-font-size-huge-clamp-2-25-rem-4-vw-2-75-rem-font-size"><a href="./media-mention-my-uncool-mention/index.html" target="_self" rel="">Media Mention: My Uncool Mention</a></h2>
+
+
+
+
+<div class="wp-block-columns alignwide">
+<div class="wp-block-column" style="flex-basis:650px">
+<div class="wp-block-post-excerpt"><p class="wp-block-post-excerpt__excerpt">[flyntTheContent id=&#8221;14&#8243;] </p></div>
+
+<div style="font-style:italic; font-weight:400;" class="wp-block-post-date has-small-font-size"><time datetime="2022-03-24T22:48:12+00:00"><a href="./media-mention-my-uncool-mention/index.html">March 24, 2022</a></time></div>
+</div>
+
+
+
+<div class="wp-block-column"></div>
+</div>
+
+
+
+<div style="height:112px" aria-hidden="true" class="wp-block-spacer"></div>
+</div>
+
+</li>
+<li class="wp-block-post post-12 post type-post status-publish format-standard hentry category-uncategorized">
+
+<div class="wp-container-624373be84975 wp-container-624373be8314e wp-block-group">
+<h2 class="alignwide wp-block-post-title has-var-wp-custom-typography-font-size-huge-clamp-2-25-rem-4-vw-2-75-rem-font-size"><a href="./media-mention-some-cool-mention/index.html" target="_self" rel="">Media Mention: Some Cool Mention</a></h2>
+
+
+
+
+<div class="wp-block-columns alignwide">
+<div class="wp-block-column" style="flex-basis:650px">
+<div class="wp-block-post-excerpt"><p class="wp-block-post-excerpt__excerpt">[flyntTheContent id=&#8221;12&#8243;] </p></div>
+
+<div style="font-style:italic; font-weight:400;" class="wp-block-post-date has-small-font-size"><time datetime="2022-03-24T22:45:01+00:00"><a href="./media-mention-some-cool-mention/index.html">March 24, 2022</a></time></div>
+</div>
+
+
+
+<div class="wp-block-column"></div>
+</div>
+
+
+
+<div style="height:112px" aria-hidden="true" class="wp-block-spacer"></div>
+</div>
+
+</li>
+<li class="wp-block-post post-1 post type-post status-publish format-standard hentry category-uncategorized">
+
+<div class="wp-container-624373be88af3 wp-container-624373be86fc5 wp-block-group">
+<h2 class="alignwide wp-block-post-title has-var-wp-custom-typography-font-size-huge-clamp-2-25-rem-4-vw-2-75-rem-font-size"><a href="./hello-world/index.html" target="_self" rel="">Hello world!</a></h2>
+
+
+
+
+<div class="wp-block-columns alignwide">
+<div class="wp-block-column" style="flex-basis:650px">
+<div class="wp-block-post-excerpt"><p class="wp-block-post-excerpt__excerpt">Welcome to WordPress. This is your first post. Edit or delete it, then start writing! </p></div>
+
+<div style="font-style:italic; font-weight:400;" class="wp-block-post-date has-small-font-size"><time datetime="2022-02-28T22:42:22+00:00"><a href="./hello-world/index.html">February 28, 2022</a></time></div>
+</div>
+
+
+
+<div class="wp-block-column"></div>
+</div>
+
+
+
+<div style="height:112px" aria-hidden="true" class="wp-block-spacer"></div>
+</div>
+
+</li>
+</ul>
+
+</main>
+
+
+<footer class="wp-block-template-part">
+<div class="wp-container-624373be92992 wp-block-group" style="padding-top:var(--wp--custom--spacing--large, 8rem)">
+
+					<div class="wp-container-624373be911ca wp-block-group alignfull">
+					<div class="wp-container-624373be8fbc7 wp-block-group alignwide" style="padding-top:4rem;padding-bottom:4rem">
+<p class="wp-block-site-title"><a href="./index.html" rel="home" aria-current="page">NWEA Dev Local</a></p>
+
+					
+					<p class="has-text-align-right">Proudly powered by <a href="https://wordpress.org/" rel="nofollow">WordPress</a></p>
+					</div>
+					</div>
+					
+</div>
+
+</footer>
+</div>
+
+		<style id="skip-link-styles">.skip-link.screen-reader-text {
+			border: 0;
+			clip: rect(1px,1px,1px,1px);
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip: auto !important;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}</style>
+		<script>
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		// Get the site wrapper.
+		// The skip-link will be injected in the beginning of it.
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerHTML = 'Skip to content';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
+	</script>
+			<span class="ssp-id" style="display:none">29</span>
+		</body>
 </html>
