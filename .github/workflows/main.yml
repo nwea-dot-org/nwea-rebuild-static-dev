@@ -1,0 +1,30 @@
+name: CP custom-404 to 404.html
+
+on:
+  push:
+    paths:
+      - 'custom-404/index.html'
+
+  workflow_dispatch:
+
+jobs:
+  build_404:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+        with:
+         ref: dev
+
+      # Setup 
+      - name: setup git config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+
+      # Runs a set of commands using the runners shell
+      - name: mv and commit new 404 file
+        run: |
+          git mv custom-404/index.html 404.html
+          git commit -m "Updated 404"
+          git push origin dev
