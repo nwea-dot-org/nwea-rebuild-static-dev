@@ -9,141 +9,257 @@
 
 <channel>
 	<title>NWEA Dev Local</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="https://nwea-dot-org.github.io/nwea-rebuild-static-dev/feed/" rel="self" type="application/rss+xml" />
+	<link>https://nwea-dot-org.github.io/nwea-rebuild-static-dev/</link>
 	<description></description>
-	<lastBuildDate>Tue, 29 Mar 2022 21:15:11 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 08 Sep 2022 18:44:12 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.2</generator>
+	<generator>https://wordpress.org/?v=6.0.2</generator>
 	<item>
-		<title>This Page has been updated</title>
-		<link>./../page-is-published/index.html</link>
-					<comments>./../page-is-published/index.html#respond</comments>
+		<title>Students Who Use Math Tool for 30 Minutes per Week Achieve Better-than-Projected Math Gains</title>
+		<link>https://nwea-dot-org.github.io/nwea-rebuild-static-dev/news-center/press-releases/students-who-use-math-tool-for-30-minutes-per-week-achieve-better-than-projected-gains/</link>
 		
 		<dc:creator><![CDATA[jake.weston]]></dc:creator>
-		<pubDate>Tue, 29 Mar 2022 20:51:14 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">./../index.html?p=29</guid>
+		<pubDate>Tue, 16 Aug 2022 02:00:09 +0000</pubDate>
+				<category><![CDATA[Press Releases]]></category>
+		<guid isPermaLink="false">https://nwea-dot-org.github.io/nwea-rebuild-static-dev/news-center/uncategorized/students-who-use-math-tool-for-30-minutes-per-week-achieve-better-than-projected-gains/</guid>
 
-					<description><![CDATA[[flyntTheContent id="29"]]]></description>
-										<content:encoded><![CDATA[[flyntTheContent id="29"]]]></content:encoded>
+					<description><![CDATA[Findings from 2020-2021 school year buck national trend of  sluggish math gains caused by pandemic-related disruptions to learning. Mountain View, Calif., and Portland, Ore., August 16, 2022— A new study]]></description>
+										<content:encoded><![CDATA[<em>Findings from 2020-2021 school year buck national trend of  </em><em>sluggish math gains caused by pandemic-related disruptions to learning. </em>
+
+<strong>Mountain View, Calif., and Portland, Ore., August 16, 2022</strong>— A new study released today shows students who use MAP Accelerator, a personalized math tool jointly developed by Khan Academy and NWEA, achieve greater-than-projected gains in math. The initial findings suggest that the supplemental classroom tool may be an effective way to address unfinished learning from the pandemic, according to researchers.
+
+The study was conducted in the height of the pandemic during the 2020-21 school year. The sample includes more than 180,000 students in third through eighth grades from 649 schools. <a href="http://khan.co/MAResearchBrief2022">Study results</a> showed a number of benefits with 30 minutes of use:
+<ul>
+ 	<li>On average, test-score gains were 19% larger than projected.</li>
+ 	<li>Scores increased across all grade levels.</li>
+ 	<li>Scores increased across gender, race/ethnicity and poverty level.</li>
+</ul>
+“I think it’s important to remember the enormous challenges students faced in the 2020-2021 school year,” said Khan Academy founder Sal Khan. “Despite the circumstances, the students in this study who used MAP Accelerator as recommended made gains in math that are larger than projected, even for a pre-pandemic school year.”
+
+The study analyzed data from MAP Growth, a computer-adaptive assessment developed by NWEA, the not-for-profit research and educational services provider. MAP Growth is administered several times per year and taken by more than a quarter of U.S. students. MAP Growth scores are automatically imported into MAP Accelerator to generate a personalized, mastery-based learning plan for every student.
+
+“Waverly Middle School adopted MAP Accelerator to respond to unfinished learning that had occurred due to the COVID-19-related school disruptions,” said Elizabeth McIntosh, director of curriculum and instruction at Waverly Central School District in Waverly, New York. “The tool is a great way to support our kids in meeting them where they are instructionally. Our students find it highly engaging while helping them with core instruction, filling gaps, and putting them on a ramp to success.”
+
+The results of the study suggest a positive and significant relationship between using MAP Accelerator and score gains on the MAP Growth assessment.
+
+A grade-level view shows student gains. The purple, horizontal lines below represent projected gains based on <a href="https://www.nwea.org/normative-data-rit-scores/">NWEA norms</a>. The green bars depict gains for students who used MAP Accelerator for at least 30 minutes per week.
+
+<img class="alignnone size-medium wp-image-42178" style="width: 720px; height: auto;" src="/content/uploads/2022/08/map-accelerator-efficacy-press-release_NWEA_thumb-300x162.png" alt="" />
+
+For example, fifth-grade students who used MAP Accelerator for 30 minutes per week grew an average 18% more than projected, gaining 1.7 points above pre-pandemic norms.
+
+“The results of this study offer a lot of hope for addressing the impacts of this pandemic, which has disproportionately hit some of our most underserved populations,” said NWEA CEO Chris Minnich. “It underscores the importance of increased opportunities for students to engage with targeted math content, and a tool like MAP Accelerator makes it possible for teachers to do that efficiently.”
+
+For an explanation of math RIT scores, please see <a href="https://www.nwea.org/normative-data-rit-scores/">Normative Data &amp; RIT Scores</a>.
+
+For more detailed information on the research findings, please see the <a href="http://khan.co/MATechReport2022">technical report</a>.
+
+&nbsp;
+
+<strong>About MAP Accelerator</strong>
+
+A personalized learning tool for grades three through eight, MAP Accelerator reduces the manual work of differentiating math instruction by automatically integrating Clever class rosters, MAP Growth scores and Khan Academy content to generate learning pathways — complete with lessons, instructional videos and practice problems. Teachers can adjust individual student goals and learning pathways as students master new skills and concepts. District and school administrators can track usage and monitor the effectiveness of MAP Accelerator with easy-to-use reporting dashboards. MAP Accelerator is available in English and Spanish.
+
+&nbsp;
+
+<strong>About NWEA</strong>
+
+NWEA® (formerly known as Northwest Evaluation Association) is a mission-driven, not-for-profit organization that supports students and educators in more than 146 countries through research, assessment solutions, policy and advocacy services, professional learning and school improvement services that fight for equity, drive classroom impact and push for systemic change in our educational communities. Visit <a href="https://www.nwea.org/">NWEA.org</a> to learn more about how we’re partnering with educators to help all kids learn. For media inquiries, please contact Simona Beattie, Sr. Manager, Public Relations, at simona.beattie@nwea.org or (971) 361-9526.
+
+&nbsp;
+
+<strong>About Khan Academy</strong>
+
+Khan Academy is a 501(c)(3) nonprofit organization with the mission of providing a free, world-class education for anyone, anywhere. Our platforms include more than 70,000 practice problems, videos, quizzes and articles that cover a range of preK-12 subjects, including math, science, humanities and Official SAT Practice. Khan Academy’s mastery-based learning system allows students to learn key concepts at a pace that’s right for them before moving on to more challenging content. Worldwide, more than 135 million registered learners have used Khan Academy in 190 countries and 51 languages. For more information, please submit a media inquiry at our <a href="https://support.khanacademy.org/hc/en-us/articles/202483630">press center</a> or call (650) 429-8154.]]></content:encoded>
 					
-					<wfw:commentRss>./../page-is-published/feed/index.html</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>New Post 3</title>
-		<link>./../new-post-3/index.html</link>
-					<comments>./../new-post-3/index.html#respond</comments>
+		<title>New NWEA Research on Learning Through the Pandemic Shows Early Signs of Rebounding</title>
+		<link>https://nwea-dot-org.github.io/nwea-rebuild-static-dev/news-center/press-releases/new-nwea-research-on-learning-through-the-pandemic-shows-early-signs-of-rebounding/</link>
 		
 		<dc:creator><![CDATA[jake.weston]]></dc:creator>
-		<pubDate>Thu, 24 Mar 2022 22:55:36 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">./../index.html?p=20</guid>
+		<pubDate>Mon, 18 Jul 2022 21:00:24 +0000</pubDate>
+				<category><![CDATA[Press Releases]]></category>
+		<guid isPermaLink="false">https://nwea-dot-org.github.io/nwea-rebuild-static-dev/news-center/uncategorized/new-nwea-research-on-learning-through-the-pandemic-shows-early-signs-of-rebounding/</guid>
 
-					<description><![CDATA[[flyntTheContent id="20"]]]></description>
-										<content:encoded><![CDATA[[flyntTheContent id="20"]]]></content:encoded>
+					<description><![CDATA[Portland, Ore. — July 19, 2022 — NWEA — a not-for-profit, research and educational services organization serving K-12 students – announced today new research highlighting the latest data on achievement]]></description>
+										<content:encoded><![CDATA[<strong>Portland, Ore. — July 19, 2022 — </strong><a href="https://www.nwea.org/">NWEA</a> — a not-for-profit, research and educational services organization serving K-12 students – announced today <a href="https://www.nwea.org/research/publication/student-achievement-in-2021-22-cause-for-hope-and-continued-urgency">new research</a> highlighting the latest data on achievement during the pandemic. Key findings from this third school year impacted by COVID-19 suggest early signs of rebounding offering some hope. However, results also underscore that recovery is still years away and there is a need for sustained urgency in addressing interrupted learning.
+
+The study is the <a href="https://www.nwea.org/research/theme/covid-19-and-schools">latest in a series of research</a> from NWEA focused on tracking the impact of the pandemic on learning. It used data from over 8.3 million students who took the MAP Growth assessment in reading and math during the COVID-impacted years (spanning 2018-19 to 2021-22) and compared these data to an equivalent sized sample of students who tested before the pandemic (spanning 2015-16 to 2018-19). Key takeaways from this latest data bring both hope and concern.
+
+<strong>Early signs of hope: </strong>
+<ul>
+ 	<li>Initial signs of academic rebounding were evident in 2021-22 with academic gains (fall to spring) that paralleled pre-pandemic trends, especially in math and among younger students.</li>
+ 	<li>Academic growth rebounded to parallel pre-pandemic trends across school-poverty levels; however, students in low-poverty schools have less ground to make-up and thus will likely recover faster.</li>
+</ul>
+<strong>Continued concern:</strong>
+<ul>
+ 	<li>Despite initial signs of rebounding, student achievement is still lower than where we’d expect it to be if the pandemic did not happen. Furthermore, if improvements continue at the rate we saw this year, the timeline for a full recovery is years away and will likely extend past the availability of federal recovery funds.</li>
+ 	<li>Achievement was lower for all student groups in spring 2022 (compared to pre-pandemic levels); with historically marginalized students and students in high-poverty schools remaining disproportionately impacted.</li>
+</ul>
+“These signs of rebounding are especially heartening during another challenging school year of more variants, staff shortages, and a host of uncertainties. We think that speaks volumes to the tremendous effort put forth by our schools to support students,” said <strong>Dr. Karyn Lewis</strong>, Director of the Center for School and Student Progress at NWEA, and the co-author with Dr. Megan Kuhfeld on this research study. “Any signs of hope are reasons to celebrate, and we must take that moment to do so, and then push forward with renewed energy and a sense of urgency because we’re just at the initial steps of addressing the tremendous impact of this pandemic on our students.”
+
+NWEA’s researchers point out that this data is a national view of the continued impacts of the pandemic, which provides a broad “where are trends heading” perspective. But they urge that local context is just as, if not more, important. They note that even within districts, impacts are not equal between schools. That level of nuance should be evaluated when looking at recovery efforts and long-term planning so that schools can “right-size” their efforts to most effectively help all students move toward better outcomes.
+
+While schools work tirelessly to support the growth of students, they cannot do this alone. Over the past two years, NWEA has collaborated with colleagues from across the policy and civil rights community to offer<a href="https://www.nwea.org/resource-center/resource/informing-covid-19-recovery-insights-from-nweas-map-growth-assessment-and-policy-recommendations-2/"> recommendations to support pandemic recovery</a>, and we continue that push going into the next school year.
+
+“We urge policymakers and education leaders to use data and have strong data systems that provide continuous feedback on interventions to inform recovery,” said<strong> Lindsay Dworkin</strong>, SVP of Policy and Communications at NWEA. “Beyond investing in research-based interventions that are targeted at students most impacted by the pandemic, education leaders will need the resources, support, and flexibility necessary to expand instructional time for students as well as provide more professional learning opportunities to their teachers.”
+
+Read the full report: <a href="https://www.nwea.org/research/publication/student-achievement-in-2021-22-cause-for-hope-and-continued-urgency/">https://www.nwea.org/research/publication/student-achievement-in-2021-22-cause-for-hope-and-continued-urgency</a>
+<ul>
+ 	<li>Graphs &amp; charts available upon request</li>
+ 	<li>Video of Dr. Karyn Lewis providing an overview of the research is also available upon request</li>
+</ul>
+<h4>About NWEA</h4>
+<a href="https://nwea.org/">NWEA</a><a href="https://nwea.org/"><sup>®</sup></a> (formerly known as Northwest Evaluation Association) is a mission-driven, not-for-profit organization that supports students and educators in more than 146 countries through research, assessment solutions, policy and advocacy services, professional learning and school improvement services that fight for equity, drive classroom impact and push for systemic change in our educational communities. Visit <a href="https://nwea.org/">NWEA.org</a> to learn more about how we’re partnering with educators to help all kids learn.
+
+<strong>Contact</strong>: Simona Beattie, Sr. Manager, Public Relations, simona.beattie@nwea.org or 971.361.9526]]></content:encoded>
 					
-					<wfw:commentRss>./../new-post-3/feed/index.html</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>New Post 2</title>
-		<link>./../new-post-2/index.html</link>
-					<comments>./../new-post-2/index.html#respond</comments>
+		<title>The Interesting Effects 4-Day Weeks May Have on School Climate</title>
+		<link>https://www.edweek.org/leadership/the-interesting-effects-4-day-weeks-may-have-on-school-climate/2022/06</link>
 		
 		<dc:creator><![CDATA[jake.weston]]></dc:creator>
-		<pubDate>Thu, 24 Mar 2022 22:55:10 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">./../index.html?p=18</guid>
+		<pubDate>Thu, 30 Jun 2022 13:40:09 +0000</pubDate>
+				<category><![CDATA[Mentions]]></category>
+		<guid isPermaLink="false">https://nwea-dot-org.github.io/nwea-rebuild-static-dev/news-center/uncategorized/the-interesting-effects-4-day-weeks-may-have-on-school-climate/</guid>
 
-					<description><![CDATA[[flyntTheContent id="18"]]]></description>
-										<content:encoded><![CDATA[[flyntTheContent id="18"]]]></content:encoded>
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[]]></content:encoded>
 					
-					<wfw:commentRss>./../new-post-2/feed/index.html</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>New Post 1</title>
-		<link>./../new-post-1/index.html</link>
-					<comments>./../new-post-1/index.html#respond</comments>
+		<title>NWEA Selects New President of District Division</title>
+		<link>https://nwea-dot-org.github.io/nwea-rebuild-static-dev/news-center/news/nwea-selects-new-president-of-district-division/</link>
 		
 		<dc:creator><![CDATA[jake.weston]]></dc:creator>
-		<pubDate>Thu, 24 Mar 2022 22:55:01 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">./../index.html?p=16</guid>
+		<pubDate>Tue, 28 Jun 2022 11:06:27 +0000</pubDate>
+				<category><![CDATA[NWEA News]]></category>
+		<guid isPermaLink="false">https://nwea-dot-org.github.io/nwea-rebuild-static-dev/news-center/uncategorized/nwea-selects-new-president-of-district-division/</guid>
 
-					<description><![CDATA[Here are some updates.]]></description>
-										<content:encoded><![CDATA[Here are some updates.]]></content:encoded>
+					<description><![CDATA[Focused role will provide critical educator voice to the organization’s services to districts and schools &#160; Portland, Ore., June 28, 2022 — NWEA — the not-for-profit, research and educational services]]></description>
+										<content:encoded><![CDATA[<em>Focused role will provide critical educator voice to the organization’s services to districts and schools</em>
+
+&nbsp;
+
+<strong>Portland, Ore., June 28, 2022</strong> — <a href="https://www.nwea.org/">NWEA</a> — the not-for-profit, research and educational services provider serving K-12 students — announced today that Dr. Fred McDaniel will serve as the organization’s new President of District Division.  As the president, Fred will provide leadership to drive the growth of the organization and its focus on service and support to more than 4,500 school districts in the US and in 146 countries.
+
+“I am humbled and honored by this opportunity to continue to serve students, teachers, principals and administrators in this broader capacity. My colleagues at NWEA are passionate about our mission and work, and I look forward to collaborating with them on behalf of kids,” said Dr. Fred McDaniel.
+
+Fred has been with NWEA for more than seven years serving in key leadership roles, including his most recent role of EVP of Assessment and Professional Learning leading the Content Advocacy, Psychometrics, School Improvement and Professional Learning teams. Previously he led the Product Management team at NWEA and served as VP of Operations.  Prior to NWEA, he served as the Chief Planning Officer for a large public school system in South Carolina and has also managed assessment and accountability systems in the public sector. Fred holds a Ph.D. in Educational Psychology and Research as well as a Master of Education in Educational Research and Measurement from the University of South Carolina.
+
+“Beyond Fred’s vast expertise and experience in managing diverse teams, leading change and supporting our organization’s vision and growth, he also brings a critical educator voice and deep understanding of school districts and education communities,” said Chris Minnich, CEO of NWEA. “I’m confident he will provide growth opportunities for the District Division, while his leadership skills will ensure we have high functioning teams focused on our mission of partnering to help all kids learn.”
+
+&nbsp;
+
+<strong>About NWEA</strong>
+
+NWEA® (formerly known as Northwest Evaluation Association) is a mission-driven, not-for-profit organization that supports students and educators in more than 146 countries through research, assessment solutions, policy and advocacy services, professional learning and school improvement services that fight for equity, drive classroom impact and push for systemic change in our educational communities. Visit NWEA.org to learn more about how we’re partnering with educators to help all kids learn.
+
+<strong>Contact:</strong> Simona Beattie, Sr. Manager, Public Relations, <u>simona.beattie@nwea.org</u> or 971.361.9526]]></content:encoded>
 					
-					<wfw:commentRss>./../new-post-1/feed/index.html</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>Media Mention: My Uncool Mention</title>
-		<link>./../media-mention-my-uncool-mention/index.html</link>
-					<comments>./../media-mention-my-uncool-mention/index.html#respond</comments>
+		<title>3 Ways to Interrupt the Vicious &#8216;Math is Too Hard&#8217; Cycle with Technology</title>
+		<link>https://thejournal.com/articles/2022/06/22/3-ways-to-interrupt-the-vicious-math-is-too-hard-cycle-with-technology.aspx</link>
 		
 		<dc:creator><![CDATA[jake.weston]]></dc:creator>
-		<pubDate>Thu, 24 Mar 2022 22:48:12 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">./../index.html?p=14</guid>
+		<pubDate>Wed, 22 Jun 2022 13:38:50 +0000</pubDate>
+				<category><![CDATA[Mentions]]></category>
+		<guid isPermaLink="false">https://nwea-dot-org.github.io/nwea-rebuild-static-dev/news-center/uncategorized/3-ways-to-interrupt-the-vicious-math-is-too-hard-cycle-with-technology/</guid>
 
-					<description><![CDATA[[flyntTheContent id="14"]]]></description>
-										<content:encoded><![CDATA[[flyntTheContent id="14"]]]></content:encoded>
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[]]></content:encoded>
 					
-					<wfw:commentRss>./../media-mention-my-uncool-mention/feed/index.html</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>Media Mention: Some Cool Mention</title>
-		<link>./../media-mention-some-cool-mention/index.html</link>
-					<comments>./../media-mention-some-cool-mention/index.html#respond</comments>
+		<title>6 things we&#8217;ve learned about how the pandemic disrupted learning</title>
+		<link>https://www.npr.org/2022/06/22/1105970186/pandemic-learning-loss-findings</link>
 		
 		<dc:creator><![CDATA[jake.weston]]></dc:creator>
-		<pubDate>Thu, 24 Mar 2022 22:45:01 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">./../index.html?p=12</guid>
+		<pubDate>Wed, 22 Jun 2022 13:34:51 +0000</pubDate>
+				<category><![CDATA[Mentions]]></category>
+		<guid isPermaLink="false">https://nwea-dot-org.github.io/nwea-rebuild-static-dev/news-center/uncategorized/6-things-weve-learned-about-how-the-pandemic-disrupted-learning/</guid>
 
-					<description><![CDATA[[flyntTheContent id="12"]]]></description>
-										<content:encoded><![CDATA[[flyntTheContent id="12"]]]></content:encoded>
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[]]></content:encoded>
 					
-					<wfw:commentRss>./../media-mention-some-cool-mention/feed/index.html</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>Hello world!</title>
-		<link>./../hello-world/index.html</link>
-					<comments>./../hello-world/index.html#comments</comments>
+		<title>The Pandemic’s Toll on Academic Growth Wasn’t Uniform. Recovery Efforts Can’t Be Either</title>
+		<link>https://www.edweek.org/leadership/opinion-the-pandemics-toll-on-academic-growth-wasnt-uniform-recovery-efforts-cant-be-either/2022/06</link>
 		
 		<dc:creator><![CDATA[jake.weston]]></dc:creator>
-		<pubDate>Mon, 28 Feb 2022 22:42:22 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">./../index.html?p=1</guid>
+		<pubDate>Tue, 21 Jun 2022 13:33:35 +0000</pubDate>
+				<category><![CDATA[Mentions]]></category>
+		<guid isPermaLink="false">https://nwea-dot-org.github.io/nwea-rebuild-static-dev/news-center/uncategorized/the-pandemics-toll-on-academic-growth-wasnt-uniform-recovery-efforts-cant-be-either/</guid>
 
-					<description><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></description>
-										<content:encoded><![CDATA[
-<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
-]]></content:encoded>
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[]]></content:encoded>
 					
-					<wfw:commentRss>./../hello-world/feed/index.html</wfw:commentRss>
-			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What is the Science of Reading?</title>
+		<link>https://www.weareteachers.com/what-is-the-science-of-reading/</link>
+		
+		<dc:creator><![CDATA[jake.weston]]></dc:creator>
+		<pubDate>Fri, 17 Jun 2022 13:26:37 +0000</pubDate>
+				<category><![CDATA[Mentions]]></category>
+		<guid isPermaLink="false">https://nwea-dot-org.github.io/nwea-rebuild-static-dev/news-center/uncategorized/what-is-the-science-of-reading/</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Summer learning loss hits some students harder, but there are ways to help</title>
+		<link>https://www.audacy.com/podcasts/kyw-newsradio-in-depth-229/summer-learning-loss-hits-some-students-harder-but-there-are-ways-to-help-1467441654</link>
+		
+		<dc:creator><![CDATA[jake.weston]]></dc:creator>
+		<pubDate>Thu, 16 Jun 2022 13:25:13 +0000</pubDate>
+				<category><![CDATA[Mentions]]></category>
+		<guid isPermaLink="false">https://nwea-dot-org.github.io/nwea-rebuild-static-dev/news-center/uncategorized/summer-learning-loss-hits-some-students-harder-but-there-are-ways-to-help/</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>When Teachers Pay Attention to How Their Students Think, Kids Can Make More Sense of Math</title>
+		<link>https://www.edpost.com/stories/when-teachers-pay-attention-to-how-their-students-think-kids-can-make-more-sense-of-math?hsLang=en</link>
+		
+		<dc:creator><![CDATA[jake.weston]]></dc:creator>
+		<pubDate>Thu, 09 Jun 2022 13:10:57 +0000</pubDate>
+				<category><![CDATA[Mentions]]></category>
+		<guid isPermaLink="false">https://nwea-dot-org.github.io/nwea-rebuild-static-dev/news-center/uncategorized/when-teachers-pay-attention-to-how-their-students-think-kids-can-make-more-sense-of-math/</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[]]></content:encoded>
+					
 		
 		
 			</item>
