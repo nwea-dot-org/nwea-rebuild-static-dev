@@ -8,10 +8,10 @@
 <channel>
 	<title>
 	Comments for NWEA Stage	</title>
-	<atom:link href="https://nwea-dot-org.github.io/nwea-rebuild-static-dev/comments/feed/" rel="self" type="application/rss+xml" />
-	<link>https://nwea-dot-org.github.io/nwea-rebuild-static-dev/</link>
+	<atom:link href="https://d1ushxurfijnsi.cloudfront.net/comments/feed/" rel="self" type="application/rss+xml" />
+	<link>https://d1ushxurfijnsi.cloudfront.net/</link>
 	<description></description>
-	<lastBuildDate>Mon, 12 Sep 2022 18:14:40 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 15 Sep 2022 22:31:07 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
