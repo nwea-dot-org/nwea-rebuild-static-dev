@@ -9975,11 +9975,11 @@
 				div1 = element("div");
 				if (if_block) if_block.c();
 				t2 = space();
-				attr(button, "class", "accordion-button fw-bold py-2 svelte-2oc32n");
+				attr(button, "class", "accordion-button fw-bold py-2 collapsed svelte-2oc32n");
 				attr(button, "type", "button");
 				attr(button, "data-bs-toggle", "collapse");
 				attr(button, "data-bs-target", button_data_bs_target_value = "#collapse" + /*item*/ ctx[4].id);
-				attr(button, "aria-expanded", "true");
+				attr(button, "aria-expanded", "false");
 				attr(button, "aria-controls", button_aria_controls_value = "collapse" + /*item*/ ctx[4].id);
 				attr(div0, "class", "accordion-header");
 				attr(div0, "id", div0_id_value = "heading" + /*item*/ ctx[4].id);
