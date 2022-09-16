@@ -6,7 +6,7 @@
   font-weight: 400;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Book"), local("Gotham Book");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Book.woff2?822b1d0fc71165304130bb16176eebd6") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Book.woff2?822b1d0fc71165304130bb16176eebd6") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -15,7 +15,7 @@
   font-weight: 400;
   unicode-range: U+0020-00FE;
   src: local("Gotham-BookItalic"), local("Gotham Book Italic");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Book Italic.woff2?0f544f9b441de5c2ba0d4bd133bd0772") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Book Italic.woff2?0f544f9b441de5c2ba0d4bd133bd0772") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -24,7 +24,7 @@
   font-weight: 500;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Medium"), local("Gotham Medium");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Medium.woff2?eb025c0b7d84a2c6eaec3fc9c69cb796") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Medium.woff2?eb025c0b7d84a2c6eaec3fc9c69cb796") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -33,7 +33,7 @@
   font-weight: 500;
   unicode-range: U+0020-00FE;
   src: local("Gotham-MediumItalic"), local("Gotham Medium Italic");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Medium Italic.woff2?a1271e9811395f85f4ab865e3b46f1d9") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Medium Italic.woff2?a1271e9811395f85f4ab865e3b46f1d9") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -42,7 +42,7 @@
   font-weight: 700;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Bold"), local("Gotham Bold");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Bold.woff2?c4fece77364a317260ff363fee52eae3") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Bold.woff2?c4fece77364a317260ff363fee52eae3") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -51,7 +51,7 @@
   font-weight: 700;
   unicode-range: U+0020-00FE;
   src: local("Gotham-BoldItalic"), local("Gotham Bold Italic");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Bold Italic.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Bold Italic.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -59,7 +59,7 @@
   font-weight: 900;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Black"), local("Gotham Black");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Black.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Black.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -68,7 +68,7 @@
   font-weight: 900;
   unicode-range: U+0020-00FE;
   src: local("Gotham-BlackItalic"), local("Gotham Black Italic");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Black.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Black.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
 }
 @font-face {
   font-family: Sentinel;
@@ -12529,8 +12529,8 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
  * -------------------------- */
 @font-face {
   font-family: "FontAwesome";
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/fontawesome-webfont.eot#iefix&v=4.7.0") format("embedded-opentype"), url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/fontawesome-webfont.eot#iefix&v=4.7.0") format("embedded-opentype"), url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -15611,7 +15611,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 400;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Book"), local("Gotham Book");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Book.woff2?822b1d0fc71165304130bb16176eebd6") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Book.woff2?822b1d0fc71165304130bb16176eebd6") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -15620,7 +15620,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 400;
   unicode-range: U+0020-00FE;
   src: local("Gotham-BookItalic"), local("Gotham Book Italic");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Book Italic.woff2?0f544f9b441de5c2ba0d4bd133bd0772") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Book Italic.woff2?0f544f9b441de5c2ba0d4bd133bd0772") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -15629,7 +15629,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 500;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Medium"), local("Gotham Medium");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Medium.woff2?eb025c0b7d84a2c6eaec3fc9c69cb796") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Medium.woff2?eb025c0b7d84a2c6eaec3fc9c69cb796") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -15638,7 +15638,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 500;
   unicode-range: U+0020-00FE;
   src: local("Gotham-MediumItalic"), local("Gotham Medium Italic");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Medium Italic.woff2?a1271e9811395f85f4ab865e3b46f1d9") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Medium Italic.woff2?a1271e9811395f85f4ab865e3b46f1d9") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -15647,7 +15647,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 700;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Bold"), local("Gotham Bold");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Bold.woff2?c4fece77364a317260ff363fee52eae3") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Bold.woff2?c4fece77364a317260ff363fee52eae3") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -15656,7 +15656,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 700;
   unicode-range: U+0020-00FE;
   src: local("Gotham-BoldItalic"), local("Gotham Bold Italic");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Bold Italic.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Bold Italic.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -15664,7 +15664,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 900;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Black"), local("Gotham Black");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Black.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Black.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -15673,7 +15673,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 900;
   unicode-range: U+0020-00FE;
   src: local("Gotham-BlackItalic"), local("Gotham Black Italic");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Black.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Black.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
 }
 @font-face {
   font-family: Sentinel;
@@ -15759,7 +15759,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 400;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Book"), local("Gotham Book");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Book.woff2?822b1d0fc71165304130bb16176eebd6") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Book.woff2?822b1d0fc71165304130bb16176eebd6") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -15768,7 +15768,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 400;
   unicode-range: U+0020-00FE;
   src: local("Gotham-BookItalic"), local("Gotham Book Italic");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Book Italic.woff2?0f544f9b441de5c2ba0d4bd133bd0772") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Book Italic.woff2?0f544f9b441de5c2ba0d4bd133bd0772") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -15777,7 +15777,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 500;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Medium"), local("Gotham Medium");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Medium.woff2?eb025c0b7d84a2c6eaec3fc9c69cb796") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Medium.woff2?eb025c0b7d84a2c6eaec3fc9c69cb796") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -15786,7 +15786,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 500;
   unicode-range: U+0020-00FE;
   src: local("Gotham-MediumItalic"), local("Gotham Medium Italic");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Medium Italic.woff2?a1271e9811395f85f4ab865e3b46f1d9") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Medium Italic.woff2?a1271e9811395f85f4ab865e3b46f1d9") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -15795,7 +15795,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 700;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Bold"), local("Gotham Bold");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Bold.woff2?c4fece77364a317260ff363fee52eae3") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Bold.woff2?c4fece77364a317260ff363fee52eae3") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -15804,7 +15804,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 700;
   unicode-range: U+0020-00FE;
   src: local("Gotham-BoldItalic"), local("Gotham Bold Italic");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Bold Italic.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Bold Italic.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -15812,7 +15812,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 900;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Black"), local("Gotham Black");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Black.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Black.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -15821,7 +15821,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 900;
   unicode-range: U+0020-00FE;
   src: local("Gotham-BlackItalic"), local("Gotham Black Italic");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Black.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Black.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
 }
 @font-face {
   font-family: Sentinel;
@@ -15886,7 +15886,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 400;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Book"), local("Gotham Book");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Book.woff2?822b1d0fc71165304130bb16176eebd6") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Book.woff2?822b1d0fc71165304130bb16176eebd6") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -15895,7 +15895,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 400;
   unicode-range: U+0020-00FE;
   src: local("Gotham-BookItalic"), local("Gotham Book Italic");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Book Italic.woff2?0f544f9b441de5c2ba0d4bd133bd0772") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Book Italic.woff2?0f544f9b441de5c2ba0d4bd133bd0772") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -15904,7 +15904,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 500;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Medium"), local("Gotham Medium");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Medium.woff2?eb025c0b7d84a2c6eaec3fc9c69cb796") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Medium.woff2?eb025c0b7d84a2c6eaec3fc9c69cb796") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -15913,7 +15913,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 500;
   unicode-range: U+0020-00FE;
   src: local("Gotham-MediumItalic"), local("Gotham Medium Italic");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Medium Italic.woff2?a1271e9811395f85f4ab865e3b46f1d9") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Medium Italic.woff2?a1271e9811395f85f4ab865e3b46f1d9") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -15922,7 +15922,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 700;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Bold"), local("Gotham Bold");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Bold.woff2?c4fece77364a317260ff363fee52eae3") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Bold.woff2?c4fece77364a317260ff363fee52eae3") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -15931,7 +15931,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 700;
   unicode-range: U+0020-00FE;
   src: local("Gotham-BoldItalic"), local("Gotham Bold Italic");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Bold Italic.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Bold Italic.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -15939,7 +15939,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 900;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Black"), local("Gotham Black");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Black.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Black.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -15948,7 +15948,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 900;
   unicode-range: U+0020-00FE;
   src: local("Gotham-BlackItalic"), local("Gotham Black Italic");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Black.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Black.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
 }
 @font-face {
   font-family: Sentinel;
@@ -16010,7 +16010,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
 }
 
 .decorative-border:before {
-  background: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/images/horizontal-accent.svg") 100% 0 no-repeat;
+  background: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/images/horizontal-accent.svg") 100% 0 no-repeat;
   bottom: 0;
   content: "";
   height: 8px;
@@ -16087,7 +16087,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 400;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Book"), local("Gotham Book");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Book.woff2?822b1d0fc71165304130bb16176eebd6") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Book.woff2?822b1d0fc71165304130bb16176eebd6") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -16096,7 +16096,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 400;
   unicode-range: U+0020-00FE;
   src: local("Gotham-BookItalic"), local("Gotham Book Italic");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Book Italic.woff2?0f544f9b441de5c2ba0d4bd133bd0772") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Book Italic.woff2?0f544f9b441de5c2ba0d4bd133bd0772") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -16105,7 +16105,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 500;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Medium"), local("Gotham Medium");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Medium.woff2?eb025c0b7d84a2c6eaec3fc9c69cb796") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Medium.woff2?eb025c0b7d84a2c6eaec3fc9c69cb796") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -16114,7 +16114,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 500;
   unicode-range: U+0020-00FE;
   src: local("Gotham-MediumItalic"), local("Gotham Medium Italic");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Medium Italic.woff2?a1271e9811395f85f4ab865e3b46f1d9") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Medium Italic.woff2?a1271e9811395f85f4ab865e3b46f1d9") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -16123,7 +16123,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 700;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Bold"), local("Gotham Bold");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Bold.woff2?c4fece77364a317260ff363fee52eae3") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Bold.woff2?c4fece77364a317260ff363fee52eae3") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -16132,7 +16132,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 700;
   unicode-range: U+0020-00FE;
   src: local("Gotham-BoldItalic"), local("Gotham Bold Italic");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Bold Italic.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Bold Italic.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -16140,7 +16140,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 900;
   unicode-range: U+0020-00FE;
   src: local("Gotham-Black"), local("Gotham Black");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Black.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Black.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
 }
 @font-face {
   font-family: "Gotham";
@@ -16149,7 +16149,7 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   font-weight: 900;
   unicode-range: U+0020-00FE;
   src: local("Gotham-BlackItalic"), local("Gotham Black Italic");
-  src: url("https://nwea-dot-org.github.io/nwea-rebuild-static-dev/app/themes/inboots/fonts/Gotham Black.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
+  src: url("https://d1ushxurfijnsi.cloudfront.net/app/themes/inboots/fonts/Gotham Black.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
 }
 @font-face {
   font-family: Sentinel;
