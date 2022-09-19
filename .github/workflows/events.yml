@@ -24,7 +24,7 @@ jobs:
       
       # Find/replace events
       - name: Find and Replace events
-        uses: jacobtomlinson/gha-find-replace@v2
+        uses: jacobtomlinson/gha-find-replace@master
         with:
           find: "hello"
           replace: "world"
