@@ -1,0 +1,36 @@
+name: CP custom-404 to 404.html
+
+on:
+  push:
+    paths:
+      - 'events/*.html'
+
+  workflow_dispatch:
+
+jobs:
+  build_events:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+        with:
+         ref: dev
+
+      # Setup 
+      - name: setup git config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+      
+      # Find/replace events
+      - name: Find and Replace events
+        uses: jacobtomlinson/gha-find-replace@v2
+        with:
+          find: "hello"
+          replace: "world"
+       
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
