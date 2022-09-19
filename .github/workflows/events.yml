@@ -1,9 +1,7 @@
 name: Events find/replace
 
 on:
-  push:
-    paths:
-      - 'events/*.html'
+  page_build:
 
   workflow_dispatch:
 
