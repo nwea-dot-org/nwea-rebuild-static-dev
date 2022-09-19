@@ -1,7 +1,7 @@
 name: CP custom-404 to 404.html
 
 on:
-  push:
+  page_build:
     paths:
       - 'custom-404/index.html'
 
