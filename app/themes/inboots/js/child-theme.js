@@ -10289,7 +10289,7 @@
 	var filter = writable([]); // The store for arguments passed to ajax
 
 	var ajaxArgs = writable({
-	  url: "https://nd1ushxurfijnsi.cloudfront.net" + '/wp-json/wp/v2/posts/',
+	  url: "https://stage.cms.nwea.io" + '/wp-json/wp/v2/posts/',
 	  params: {
 	    order: 'desc'
 	  }
