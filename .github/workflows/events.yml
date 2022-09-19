@@ -13,7 +13,6 @@ jobs:
           find: "stage.cms.nwea.io"
           replace: "d1ushxurfijnsi.cloudfront.net"
           include: "events/**"
-          regex: false
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
