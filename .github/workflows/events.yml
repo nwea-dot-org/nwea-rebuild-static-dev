@@ -1,4 +1,4 @@
-name: Update URLs in events
+name: Update events
 on: [push, pull_request]
 jobs:
   build:
@@ -6,11 +6,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Find and Replace
-        uses: jacobtomlinson/gha-find-replace@2.0.0
+        uses: jacobtomlinson/gha-find-replace@v2
         with:
-          find: stage\.cms\.nwea\.io
-          replace: "d1ushxurfijnsi.cloudfront.net"
-          include: events\/*\.html
+          find: "hello"
+          replace: "world"
+          include: "events/**"
+          regex: true
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
