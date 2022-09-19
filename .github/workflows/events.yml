@@ -28,6 +28,8 @@ jobs:
         with:
           find: "hello"
           replace: "world"
+          regex: false
+          include: "events/index.html"
        
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
