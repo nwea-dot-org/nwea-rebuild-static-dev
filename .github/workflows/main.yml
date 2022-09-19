@@ -25,6 +25,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: mv and commit new 404 file
         run: |
-          git mv custom-404/index.html 404.html
+          git mv -f custom-404/index.html 404.html
           git commit -m "Updated 404"
           git push origin dev
