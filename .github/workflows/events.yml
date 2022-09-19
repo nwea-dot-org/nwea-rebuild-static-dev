@@ -28,3 +28,4 @@ jobs:
           git grep -l 'stage\.cms\.nwea\.io' | xargs sed -i 's/stage\.cms\.nwea\.io/nd1ushxurfijnsi\.cloudfront\.net/g'
           git add .
           git commit -m "Updated events paths"
+          git push origin dev
