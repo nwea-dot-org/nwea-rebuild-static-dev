@@ -1,4 +1,4 @@
-name: CP custom-404 to 404.html
+name: Events find/replace
 
 on:
   push:
