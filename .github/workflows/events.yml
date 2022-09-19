@@ -8,7 +8,7 @@ jobs:
         with:
          ref: dev
       - name: Find and Replace
-        uses: jacobtomlinson/gha-find-replace@v2
+        uses: jacobtomlinson/gha-find-replace@2.0.0
         with:
           find: "stage.cms.nwea.io"
           replace: "d1ushxurfijnsi.cloudfront.net"
