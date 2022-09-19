@@ -25,7 +25,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Find and replace paths in events
         run: |
-          git grep -l 'stage\.cms\.nwea\.io' | xargs sed -i 's/stage\.cms\.nwea\.io/nd1ushxurfijnsi\.cloudfront\.net/g'
+          git grep -l 'stage\.cms\.nwea\.io' -- 'events\/*.html' | xargs sed -i 's/stage\.cms\.nwea\.io/d1ushxurfijnsi\.cloudfront\.net/g'
           git add .
           git commit -m "Updated events paths"
           git push origin dev
