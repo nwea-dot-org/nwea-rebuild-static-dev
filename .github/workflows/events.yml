@@ -23,7 +23,7 @@ jobs:
           git config user.email "<>"
 
       # Runs a set of commands using the runners shell
-      - name: mv and commit new 404 file
+      - name: Find and replace paths in events
         run: |
           git grep -l 'stage\.cms\.nwea\.io' | xargs sed -i 's/stage\.cms\.nwea\.io/nd1ushxurfijnsi\.cloudfront\.net/g'
           git add .
