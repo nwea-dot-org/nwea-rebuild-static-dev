@@ -3,7 +3,7 @@ name: CP custom-404 to 404.html
 on:
   push:
     paths:
-      - 'custom-404/index.html`
+      - 'custom-404/index.html'
 
   workflow_dispatch:
 
