@@ -644,7 +644,7 @@ progress {
   }
 }
 
-.list-unstyled {
+.list-unstyled, #wrapper-footer ul.menu {
   padding-left: 0;
   list-style: none;
 }
@@ -654,10 +654,10 @@ progress {
   list-style: none;
 }
 
-.list-inline-item {
+.list-inline-item, #wrapper-footer ul.menu.list-inline li {
   display: inline-block;
 }
-.list-inline-item:not(:last-child) {
+.list-inline-item:not(:last-child), #wrapper-footer ul.menu.list-inline li:not(:last-child) {
   margin-right: 0.5rem;
 }
 
@@ -6959,7 +6959,7 @@ textarea.form-control-lg {
   border: 1px solid #dee2e6 !important;
 }
 
-.border-0, .card.select-no-border {
+.border-0, #wrapper-footer .bg-dark hr.wp-block-separator, .card.select-no-border {
   border: 0 !important;
 }
 
@@ -7462,7 +7462,7 @@ textarea.form-control-lg {
   margin-bottom: 1rem !important;
 }
 
-.my-4 {
+.my-4, #wrapper-footer .menu-item {
   margin-top: 1.5rem !important;
   margin-bottom: 1.5rem !important;
 }
@@ -7891,7 +7891,7 @@ textarea.form-control-lg {
   padding-bottom: 1.5rem !important;
 }
 
-.pb-5 {
+.pb-5, .carousel-item > * {
   padding-bottom: 3rem !important;
 }
 
@@ -7943,7 +7943,7 @@ textarea.form-control-lg {
   font-size: 1.25rem !important;
 }
 
-.fs-6 {
+.fs-6, #wrapper-footer .widgettitle {
   font-size: 1rem !important;
 }
 
@@ -8087,7 +8087,7 @@ textarea.form-control-lg {
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-white {
+.text-white, #wrapper-footer .bg-dark a, #wrapper-footer .bg-dark .card .btnrow .btn, #wrapper-footer .bg-dark .card .btnrow .wp-block-button__link, .card .btnrow #wrapper-footer .bg-dark .btn, .card .btnrow #wrapper-footer .bg-dark .wp-block-button__link {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
@@ -9753,7 +9753,7 @@ textarea.form-control-lg {
     padding-left: 1rem !important;
   }
 
-  .px-md-4 {
+  .px-md-4, #wrapper-footer ul.menu.list-inline li {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
   }
@@ -15752,6 +15752,18 @@ a.skip-link, .card .btnrow .skip-link.btn, .card .btnrow .skip-link.wp-block-but
   padding-left: 4.045rem;
 }
 
+#wrapper-footer .wp-block-social-links {
+  gap: 1.3rem;
+}
+#wrapper-footer .wp-block-social-links .wp-block-social-link {
+  background-color: white;
+}
+#wrapper-footer .wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor svg {
+  width: 20px !important;
+  height: 20px !important;
+  fill: #454243;
+}
+
 @font-face {
   font-family: "Gotham";
   font-stretch: normal;
@@ -16446,6 +16458,14 @@ body .has-dark-color:visited {
 body .has-dark-background-color {
   background-color: #454243;
   border-color: #454243;
+}
+
+.text-gray-400 {
+  color: #ced4da;
+}
+
+.text-gray-500 {
+  color: #adb5bd;
 }
 
 figure.wp-block-image {
