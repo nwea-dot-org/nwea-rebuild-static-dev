@@ -13194,7 +13194,7 @@
 				t5 = space();
 				div7 = element("div");
 				span = element("span");
-				span.textContent = `©${(/\d{4}/).exec(Date())[0]} NWEA`;
+				span.textContent = `© ${(/\d{4}/).exec(Date())[0]} NWEA`;
 				attr(div0, "class", "col-md-3");
 				attr(div1, "class", "col-md-3");
 				attr(div2, "class", "col-md-3");
