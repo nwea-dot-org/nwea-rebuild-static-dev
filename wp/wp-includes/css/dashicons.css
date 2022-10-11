@@ -1438,3 +1438,14 @@
 .dashicons-welcome-edit-page:before {
 	content: "\f119";
 }
+post-trash:before {
+	content: "\f182";
+}
+
+.dashicons-share1:before {
+	content: "\f237";
+}
+
+.dashicons-welcome-edit-page:before {
+	content: "\f119";
+}
