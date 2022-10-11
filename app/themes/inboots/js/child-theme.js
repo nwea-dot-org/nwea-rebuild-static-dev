@@ -9296,6 +9296,65 @@
 	  }
 	})();
 
+	function _slicedToArray(arr, i) {
+	  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
+	}
+
+	function _arrayWithHoles(arr) {
+	  if (Array.isArray(arr)) return arr;
+	}
+
+	function _iterableToArrayLimit(arr, i) {
+	  var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"];
+
+	  if (_i == null) return;
+	  var _arr = [];
+	  var _n = true;
+	  var _d = false;
+
+	  var _s, _e;
+
+	  try {
+	    for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) {
+	      _arr.push(_s.value);
+
+	      if (i && _arr.length === i) break;
+	    }
+	  } catch (err) {
+	    _d = true;
+	    _e = err;
+	  } finally {
+	    try {
+	      if (!_n && _i["return"] != null) _i["return"]();
+	    } finally {
+	      if (_d) throw _e;
+	    }
+	  }
+
+	  return _arr;
+	}
+
+	function _unsupportedIterableToArray(o, minLen) {
+	  if (!o) return;
+	  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+	  var n = Object.prototype.toString.call(o).slice(8, -1);
+	  if (n === "Object" && o.constructor) n = o.constructor.name;
+	  if (n === "Map" || n === "Set") return Array.from(o);
+	  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+	}
+
+	function _arrayLikeToArray(arr, len) {
+	  if (len == null || len > arr.length) len = arr.length;
+
+	  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
+
+	  return arr2;
+	}
+
+	function _nonIterableRest() {
+	  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+	}
+
 	function noop() { }
 	function assign(tar, src) {
 	    // @ts-ignore
@@ -9581,11 +9640,6 @@
 	function toggle_class(element, name, toggle) {
 	    element.classList[toggle ? 'add' : 'remove'](name);
 	}
-	function custom_event(type, detail, bubbles = false) {
-	    const e = document.createEvent('CustomEvent');
-	    e.initCustomEvent(type, bubbles, false, detail);
-	    return e;
-	}
 	class HtmlTag {
 	    constructor(claimed_nodes) {
 	        this.e = this.n = null;
@@ -9626,25 +9680,6 @@
 	let current_component;
 	function set_current_component(component) {
 	    current_component = component;
-	}
-	function get_current_component() {
-	    if (!current_component)
-	        throw new Error('Function called outside component initialization');
-	    return current_component;
-	}
-	function createEventDispatcher() {
-	    const component = get_current_component();
-	    return (type, detail) => {
-	        const callbacks = component.$$.callbacks[type];
-	        if (callbacks) {
-	            // TODO are there situations where events could be dispatched
-	            // in a server (non-DOM) environment?
-	            const event = custom_event(type, detail);
-	            callbacks.slice().forEach(fn => {
-	                fn.call(component, event);
-	            });
-	        }
-	    };
 	}
 	// TODO figure out if we still want to support
 	// shorthand events, or if we want to implement
@@ -9963,7 +9998,7 @@
 		let div1_data_bs_parent_value;
 		let t2;
 		let div2_class_value;
-		let if_block = /*item*/ ctx[4].content && create_if_block_1$2(ctx);
+		let if_block = /*item*/ ctx[4].content && create_if_block_1$3(ctx);
 
 		return {
 			c() {
@@ -10018,7 +10053,7 @@
 					if (if_block) {
 						if_block.p(ctx, dirty);
 					} else {
-						if_block = create_if_block_1$2(ctx);
+						if_block = create_if_block_1$3(ctx);
 						if_block.c();
 						if_block.m(div1, null);
 					}
@@ -10047,7 +10082,7 @@
 	}
 
 	// (33:5) {#if item.content }
-	function create_if_block_1$2(ctx) {
+	function create_if_block_1$3(ctx) {
 		let div;
 		let raw_value = /*item*/ ctx[4].content + "";
 
@@ -10223,9 +10258,7 @@
 	          id: event.target.getAttribute('data-option-term-id'),
 	          type: event.target.getAttribute('data-option-term-type')
 	        }
-	      })); // Toggle classes
-
-	      event.target.classList.toggle('active fw-500');
+	      }));
 	    }
 	  }; // Add listener for filter bar
 	  // @todo maybe the filter bar should be a Svelte component instead of inside a PHP template
@@ -10625,10 +10658,10 @@
 				$filter
 			);
 
-			// Toggle class for filter
-			document.querySelectorAll(`[data-option-term-id="${target}"]`)[0].classList.toggle('active');
+			// Remove class for filter
+			document.querySelectorAll(`[data-option-term-id="${target}"]`)[0].classList.remove('active');
 
-			document.querySelectorAll(`[data-option-term-id="${target}"]`)[0].classList.toggle('fw-500');
+			document.querySelectorAll(`[data-option-term-id="${target}"]`)[0].classList.remove('fw-500');
 		};
 
 		const handleDropdownClick = event => {
@@ -10935,13 +10968,13 @@
 
 	function add_css$1() {
 		var style = element("style");
-		style.id = "svelte-1uenme9-style";
-		style.textContent = ".ratio.svelte-1uenme9 img.svelte-1uenme9{object-fit:cover}.card.svelte-1uenme9.svelte-1uenme9:not(.horizontal-card){max-width:20rem}.horizontal-card.svelte-1uenme9.svelte-1uenme9{flex-direction:row}.horizontal-card.svelte-1uenme9>.svelte-1uenme9{flex:1 0 50%}.horizontal-card.svelte-1uenme9 .card-title.svelte-1uenme9{font-size:1rem !important;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:0.5rem !important}.horizontal-card.svelte-1uenme9 .card-img-top.svelte-1uenme9{border-right:1px solid currentColor}.horizontal-card.svelte-1uenme9 .card-cta{margin-left:0 !important}";
+		style.id = "svelte-6kgq0v-style";
+		style.textContent = ".ratio.svelte-6kgq0v img.svelte-6kgq0v{object-fit:cover}.card.svelte-6kgq0v.svelte-6kgq0v:not(.featured-card){max-width:21.875rem;min-height:28.12rem}.featured-card.svelte-6kgq0v.svelte-6kgq0v{flex-direction:row !important}.featured-card.svelte-6kgq0v>.svelte-6kgq0v{flex:1 0 50%}.featured-card.svelte-6kgq0v .card-title.svelte-6kgq0v{font-size:1rem !important;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.featured-card.svelte-6kgq0v .card-eyebrow.svelte-6kgq0v{margin-top:0 !important}.featured-card.svelte-6kgq0v .card-img-top.svelte-6kgq0v{border-right:1px solid currentColor}.featured-card.svelte-6kgq0v .card-cta{margin-left:0 !important}";
 		append(document.head, style);
 	}
 
-	// (63:2) {:else}
-	function create_else_block$1(ctx) {
+	// (68:2) {:else}
+	function create_else_block_1$1(ctx) {
 		let div;
 		let logo;
 		let current;
@@ -10956,7 +10989,7 @@
 			c() {
 				div = element("div");
 				create_component(logo.$$.fragment);
-				attr(div, "class", "bg-dark ratio ratio-16x9 svelte-1uenme9");
+				attr(div, "class", "bg-dark ratio ratio-16x9 card-img-container svelte-6kgq0v");
 			},
 			m(target, anchor) {
 				insert(target, div, anchor);
@@ -10980,8 +11013,8 @@
 		};
 	}
 
-	// (59:2) {#if cardImage }
-	function create_if_block_5(ctx) {
+	// (64:2) {#if cardImage }
+	function create_if_block_7(ctx) {
 		let div;
 		let img;
 		let img_src_value;
@@ -10992,8 +11025,8 @@
 				img = element("img");
 				if (img.src !== (img_src_value = /*cardImage*/ ctx[0])) attr(img, "src", img_src_value);
 				attr(img, "alt", /*cardImageAlt*/ ctx[1]);
-				attr(img, "class", "card-img-top svelte-1uenme9");
-				attr(div, "class", "ratio ratio-16x9 svelte-1uenme9");
+				attr(img, "class", "card-img-top svelte-6kgq0v");
+				attr(div, "class", "ratio ratio-16x9 card-img-container svelte-6kgq0v");
 			},
 			m(target, anchor) {
 				insert(target, div, anchor);
@@ -11016,8 +11049,8 @@
 		};
 	}
 
-	// (69:3) {#if eyebrow }
-	function create_if_block_4$1(ctx) {
+	// (74:3) {#if eyebrow }
+	function create_if_block_6(ctx) {
 		let small;
 		let t;
 
@@ -11025,7 +11058,7 @@
 			c() {
 				small = element("small");
 				t = text(/*eyebrow*/ ctx[2]);
-				attr(small, "class", "card-eyebrow");
+				attr(small, "class", "card-eyebrow mt-3 svelte-6kgq0v");
 			},
 			m(target, anchor) {
 				insert(target, small, anchor);
@@ -11040,8 +11073,8 @@
 		};
 	}
 
-	// (72:3) {#if date }
-	function create_if_block_3$1(ctx) {
+	// (77:3) {#if date }
+	function create_if_block_5(ctx) {
 		let small;
 		let t;
 
@@ -11049,7 +11082,7 @@
 			c() {
 				small = element("small");
 				t = text(/*date*/ ctx[3]);
-				attr(small, "class", "text-muted d-block mb-2 fw-500");
+				attr(small, "class", "text-muted d-block fw-500");
 			},
 			m(target, anchor) {
 				insert(target, small, anchor);
@@ -11064,14 +11097,14 @@
 		};
 	}
 
-	// (75:3) {#if title }
-	function create_if_block_2$1(ctx) {
+	// (80:3) {#if title }
+	function create_if_block_4$1(ctx) {
 		let span;
 
 		return {
 			c() {
 				span = element("span");
-				attr(span, "class", "card-title svelte-1uenme9");
+				attr(span, "class", "card-title lh-sm svelte-6kgq0v");
 			},
 			m(target, anchor) {
 				insert(target, span, anchor);
@@ -11085,14 +11118,14 @@
 		};
 	}
 
-	// (78:3) {#if description }
-	function create_if_block_1$1(ctx) {
+	// (83:3) {#if description }
+	function create_if_block_3$2(ctx) {
 		let div;
 
 		return {
 			c() {
 				div = element("div");
-				attr(div, "class", "d-block card-text");
+				attr(div, "class", "d-block card-text mb-3");
 			},
 			m(target, anchor) {
 				insert(target, div, anchor);
@@ -11106,17 +11139,88 @@
 		};
 	}
 
-	// (81:3) {#if link }
+	// (86:3) {#if link }
 	function create_if_block$2(ctx) {
+		let current_block_type_index;
+		let if_block;
+		let if_block_anchor;
+		let current;
+		const if_block_creators = [create_if_block_1$2, create_if_block_2$2, create_else_block$1];
+		const if_blocks = [];
+
+		function select_block_type_1(ctx, dirty) {
+			if ('primary' === /*ctaStyle*/ ctx[7]) return 0;
+			if ('info' === /*ctaStyle*/ ctx[7]) return 1;
+			return 2;
+		}
+
+		current_block_type_index = select_block_type_1(ctx);
+		if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+
+		return {
+			c() {
+				if_block.c();
+				if_block_anchor = empty();
+			},
+			m(target, anchor) {
+				if_blocks[current_block_type_index].m(target, anchor);
+				insert(target, if_block_anchor, anchor);
+				current = true;
+			},
+			p(ctx, dirty) {
+				let previous_block_index = current_block_type_index;
+				current_block_type_index = select_block_type_1(ctx);
+
+				if (current_block_type_index === previous_block_index) {
+					if_blocks[current_block_type_index].p(ctx, dirty);
+				} else {
+					group_outros();
+
+					transition_out(if_blocks[previous_block_index], 1, 1, () => {
+						if_blocks[previous_block_index] = null;
+					});
+
+					check_outros();
+					if_block = if_blocks[current_block_type_index];
+
+					if (!if_block) {
+						if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+						if_block.c();
+					} else {
+						if_block.p(ctx, dirty);
+					}
+
+					transition_in(if_block, 1);
+					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+				}
+			},
+			i(local) {
+				if (current) return;
+				transition_in(if_block);
+				current = true;
+			},
+			o(local) {
+				transition_out(if_block);
+				current = false;
+			},
+			d(detaching) {
+				if_blocks[current_block_type_index].d(detaching);
+				if (detaching) detach(if_block_anchor);
+			}
+		};
+	}
+
+	// (92:4) {:else}
+	function create_else_block$1(ctx) {
 		let link_1;
 		let current;
 
 		link_1 = new Link({
 				props: {
-					href: /*link*/ ctx[7],
+					href: /*link*/ ctx[8],
 					"aria-label": /*title*/ ctx[4],
-					class: (/*hot*/ ctx[10] ? 'stretched-link ' : '') + 'card-cta',
-					$$slots: { default: [create_default_slot$1] },
+					class: (/*hot*/ ctx[11] ? 'stretched-link ' : '') + 'card-cta mb-2 fw-500',
+					$$slots: { default: [create_default_slot_2] },
 					$$scope: { ctx }
 				}
 			});
@@ -11131,11 +11235,11 @@
 			},
 			p(ctx, dirty) {
 				const link_1_changes = {};
-				if (dirty & /*link*/ 128) link_1_changes.href = /*link*/ ctx[7];
+				if (dirty & /*link*/ 256) link_1_changes.href = /*link*/ ctx[8];
 				if (dirty & /*title*/ 16) link_1_changes["aria-label"] = /*title*/ ctx[4];
-				if (dirty & /*hot*/ 1024) link_1_changes.class = (/*hot*/ ctx[10] ? 'stretched-link ' : '') + 'card-cta';
+				if (dirty & /*hot*/ 2048) link_1_changes.class = (/*hot*/ ctx[11] ? 'stretched-link ' : '') + 'card-cta mb-2 fw-500';
 
-				if (dirty & /*$$scope, cta*/ 2112) {
+				if (dirty & /*$$scope, cta*/ 4160) {
 					link_1_changes.$$scope = { dirty, ctx };
 				}
 
@@ -11156,8 +11260,108 @@
 		};
 	}
 
-	// (82:4) <Link href={ link } aria-label={ title } class="{ ( hot ? 'stretched-link ' : '') + 'card-cta' }">
-	function create_default_slot$1(ctx) {
+	// (90:35) 
+	function create_if_block_2$2(ctx) {
+		let link_1;
+		let current;
+
+		link_1 = new Link({
+				props: {
+					href: /*link*/ ctx[8],
+					"aria-label": /*title*/ ctx[4],
+					class: (/*hot*/ ctx[11] ? 'stretched-link ' : '') + 'card-cta btn btn-info px-5 my-2 align-self-start',
+					$$slots: { default: [create_default_slot_1$1] },
+					$$scope: { ctx }
+				}
+			});
+
+		return {
+			c() {
+				create_component(link_1.$$.fragment);
+			},
+			m(target, anchor) {
+				mount_component(link_1, target, anchor);
+				current = true;
+			},
+			p(ctx, dirty) {
+				const link_1_changes = {};
+				if (dirty & /*link*/ 256) link_1_changes.href = /*link*/ ctx[8];
+				if (dirty & /*title*/ 16) link_1_changes["aria-label"] = /*title*/ ctx[4];
+				if (dirty & /*hot*/ 2048) link_1_changes.class = (/*hot*/ ctx[11] ? 'stretched-link ' : '') + 'card-cta btn btn-info px-5 my-2 align-self-start';
+
+				if (dirty & /*$$scope, cta*/ 4160) {
+					link_1_changes.$$scope = { dirty, ctx };
+				}
+
+				link_1.$set(link_1_changes);
+			},
+			i(local) {
+				if (current) return;
+				transition_in(link_1.$$.fragment, local);
+				current = true;
+			},
+			o(local) {
+				transition_out(link_1.$$.fragment, local);
+				current = false;
+			},
+			d(detaching) {
+				destroy_component(link_1, detaching);
+			}
+		};
+	}
+
+	// (88:4) {#if 'primary' === ctaStyle }
+	function create_if_block_1$2(ctx) {
+		let link_1;
+		let current;
+
+		link_1 = new Link({
+				props: {
+					href: /*link*/ ctx[8],
+					"aria-label": /*title*/ ctx[4],
+					class: (/*hot*/ ctx[11] ? 'stretched-link ' : '') + 'card-cta btn btn-primary px-5 my-2 align-self-start',
+					$$slots: { default: [create_default_slot$1] },
+					$$scope: { ctx }
+				}
+			});
+
+		return {
+			c() {
+				create_component(link_1.$$.fragment);
+			},
+			m(target, anchor) {
+				mount_component(link_1, target, anchor);
+				current = true;
+			},
+			p(ctx, dirty) {
+				const link_1_changes = {};
+				if (dirty & /*link*/ 256) link_1_changes.href = /*link*/ ctx[8];
+				if (dirty & /*title*/ 16) link_1_changes["aria-label"] = /*title*/ ctx[4];
+				if (dirty & /*hot*/ 2048) link_1_changes.class = (/*hot*/ ctx[11] ? 'stretched-link ' : '') + 'card-cta btn btn-primary px-5 my-2 align-self-start';
+
+				if (dirty & /*$$scope, cta*/ 4160) {
+					link_1_changes.$$scope = { dirty, ctx };
+				}
+
+				link_1.$set(link_1_changes);
+			},
+			i(local) {
+				if (current) return;
+				transition_in(link_1.$$.fragment, local);
+				current = true;
+			},
+			o(local) {
+				transition_out(link_1.$$.fragment, local);
+				current = false;
+			},
+			d(detaching) {
+				destroy_component(link_1, detaching);
+			}
+		};
+	}
+
+	// (93:5) <Link href={ link } aria-label={ title } class="{ ( hot ? 'stretched-link ' : '') + 'card-cta mb-2 fw-500' }">
+	function create_default_slot_2(ctx) {
 		let t;
 		let i;
 
@@ -11165,7 +11369,8 @@
 			c() {
 				t = text(/*cta*/ ctx[6]);
 				i = element("i");
-				attr(i, "class", "bi bi-arrow-right-short align-middle");
+				attr(i, "class", "bi bi-arrow-right-circle-fill ms-1 lh-1");
+				set_style(i, "font-size", "2rem");
 			},
 			m(target, anchor) {
 				insert(target, t, anchor);
@@ -11177,6 +11382,46 @@
 			d(detaching) {
 				if (detaching) detach(t);
 				if (detaching) detach(i);
+			}
+		};
+	}
+
+	// (91:5) <Link href={ link } aria-label={ title } class="{ ( hot ? 'stretched-link ' : '') + 'card-cta btn btn-info px-5 my-2 align-self-start' }">
+	function create_default_slot_1$1(ctx) {
+		let t;
+
+		return {
+			c() {
+				t = text(/*cta*/ ctx[6]);
+			},
+			m(target, anchor) {
+				insert(target, t, anchor);
+			},
+			p(ctx, dirty) {
+				if (dirty & /*cta*/ 64) set_data(t, /*cta*/ ctx[6]);
+			},
+			d(detaching) {
+				if (detaching) detach(t);
+			}
+		};
+	}
+
+	// (89:5) <Link href={ link } aria-label={ title } class="{ ( hot ? 'stretched-link ' : '') + 'card-cta btn btn-primary px-5 my-2 align-self-start' }">
+	function create_default_slot$1(ctx) {
+		let t;
+
+		return {
+			c() {
+				t = text(/*cta*/ ctx[6]);
+			},
+			m(target, anchor) {
+				insert(target, t, anchor);
+			},
+			p(ctx, dirty) {
+				if (dirty & /*cta*/ 64) set_data(t, /*cta*/ ctx[6]);
+			},
+			d(detaching) {
+				if (detaching) detach(t);
 			}
 		};
 	}
@@ -11195,7 +11440,7 @@
 		let div1_class_value;
 		let div2_class_value;
 		let current;
-		const if_block_creators = [create_if_block_5, create_else_block$1];
+		const if_block_creators = [create_if_block_7, create_else_block_1$1];
 		const if_blocks = [];
 
 		function select_block_type(ctx, dirty) {
@@ -11205,11 +11450,11 @@
 
 		current_block_type_index = select_block_type(ctx);
 		if_block0 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
-		let if_block1 = /*eyebrow*/ ctx[2] && create_if_block_4$1(ctx);
-		let if_block2 = /*date*/ ctx[3] && create_if_block_3$1(ctx);
-		let if_block3 = /*title*/ ctx[4] && create_if_block_2$1(ctx);
-		let if_block4 = /*description*/ ctx[5] && create_if_block_1$1(ctx);
-		let if_block5 = /*link*/ ctx[7] && create_if_block$2(ctx);
+		let if_block1 = /*eyebrow*/ ctx[2] && create_if_block_6(ctx);
+		let if_block2 = /*date*/ ctx[3] && create_if_block_5(ctx);
+		let if_block3 = /*title*/ ctx[4] && create_if_block_4$1(ctx);
+		let if_block4 = /*description*/ ctx[5] && create_if_block_3$2(ctx);
+		let if_block5 = /*link*/ ctx[8] && create_if_block$2(ctx);
 
 		return {
 			c() {
@@ -11227,9 +11472,9 @@
 				if (if_block4) if_block4.c();
 				t4 = space();
 				if (if_block5) if_block5.c();
-				attr(div0, "class", "card-body d-flex flex-column svelte-1uenme9");
-				attr(div1, "class", div1_class_value = "" + ('card mx-auto h-100 ' + /*cardClassName*/ ctx[9] + ' ' + (/*link*/ ctx[7] ? ' card-has-hover-effect' : '') + " " + " svelte-1uenme9"));
-				attr(div2, "class", div2_class_value = "" + (null_to_empty('col ' + /*containerClassName*/ ctx[8]) + " svelte-1uenme9"));
+				attr(div0, "class", "card-body d-flex flex-column svelte-6kgq0v");
+				attr(div1, "class", div1_class_value = "" + ('card mx-auto h-100 ' + /*cardClassName*/ ctx[10] + ' ' + (/*link*/ ctx[8] ? ' card-has-hover-effect' : '') + " " + " svelte-6kgq0v"));
+				attr(div2, "class", div2_class_value = "" + (null_to_empty('col flex-fill gx-3' + /*containerClassName*/ ctx[9]) + " svelte-6kgq0v"));
 			},
 			m(target, anchor) {
 				insert(target, div2, anchor);
@@ -11279,7 +11524,7 @@
 					if (if_block1) {
 						if_block1.p(ctx, dirty);
 					} else {
-						if_block1 = create_if_block_4$1(ctx);
+						if_block1 = create_if_block_6(ctx);
 						if_block1.c();
 						if_block1.m(div0, t1);
 					}
@@ -11292,7 +11537,7 @@
 					if (if_block2) {
 						if_block2.p(ctx, dirty);
 					} else {
-						if_block2 = create_if_block_3$1(ctx);
+						if_block2 = create_if_block_5(ctx);
 						if_block2.c();
 						if_block2.m(div0, t2);
 					}
@@ -11305,7 +11550,7 @@
 					if (if_block3) {
 						if_block3.p(ctx, dirty);
 					} else {
-						if_block3 = create_if_block_2$1(ctx);
+						if_block3 = create_if_block_4$1(ctx);
 						if_block3.c();
 						if_block3.m(div0, t3);
 					}
@@ -11318,7 +11563,7 @@
 					if (if_block4) {
 						if_block4.p(ctx, dirty);
 					} else {
-						if_block4 = create_if_block_1$1(ctx);
+						if_block4 = create_if_block_3$2(ctx);
 						if_block4.c();
 						if_block4.m(div0, t4);
 					}
@@ -11327,11 +11572,11 @@
 					if_block4 = null;
 				}
 
-				if (/*link*/ ctx[7]) {
+				if (/*link*/ ctx[8]) {
 					if (if_block5) {
 						if_block5.p(ctx, dirty);
 
-						if (dirty & /*link*/ 128) {
+						if (dirty & /*link*/ 256) {
 							transition_in(if_block5, 1);
 						}
 					} else {
@@ -11350,11 +11595,11 @@
 					check_outros();
 				}
 
-				if (!current || dirty & /*cardClassName, link*/ 640 && div1_class_value !== (div1_class_value = "" + ('card mx-auto h-100 ' + /*cardClassName*/ ctx[9] + ' ' + (/*link*/ ctx[7] ? ' card-has-hover-effect' : '') + " " + " svelte-1uenme9"))) {
+				if (!current || dirty & /*cardClassName, link*/ 1280 && div1_class_value !== (div1_class_value = "" + ('card mx-auto h-100 ' + /*cardClassName*/ ctx[10] + ' ' + (/*link*/ ctx[8] ? ' card-has-hover-effect' : '') + " " + " svelte-6kgq0v"))) {
 					attr(div1, "class", div1_class_value);
 				}
 
-				if (!current || dirty & /*containerClassName*/ 256 && div2_class_value !== (div2_class_value = "" + (null_to_empty('col ' + /*containerClassName*/ ctx[8]) + " svelte-1uenme9"))) {
+				if (!current || dirty & /*containerClassName*/ 512 && div2_class_value !== (div2_class_value = "" + (null_to_empty('col flex-fill gx-3' + /*containerClassName*/ ctx[9]) + " svelte-6kgq0v"))) {
 					attr(div2, "class", div2_class_value);
 				}
 			},
@@ -11389,6 +11634,7 @@
 		let { title = '' } = $$props;
 		let { description = '' } = $$props;
 		let { cta = 'Read more' } = $$props;
+		let { ctaStyle = '' } = $$props;
 		let { link = '' } = $$props;
 		let { containerClassName = '' } = $$props;
 		let { cardClassName = '' } = $$props;
@@ -11402,10 +11648,11 @@
 			if ('title' in $$props) $$invalidate(4, title = $$props.title);
 			if ('description' in $$props) $$invalidate(5, description = $$props.description);
 			if ('cta' in $$props) $$invalidate(6, cta = $$props.cta);
-			if ('link' in $$props) $$invalidate(7, link = $$props.link);
-			if ('containerClassName' in $$props) $$invalidate(8, containerClassName = $$props.containerClassName);
-			if ('cardClassName' in $$props) $$invalidate(9, cardClassName = $$props.cardClassName);
-			if ('hot' in $$props) $$invalidate(10, hot = $$props.hot);
+			if ('ctaStyle' in $$props) $$invalidate(7, ctaStyle = $$props.ctaStyle);
+			if ('link' in $$props) $$invalidate(8, link = $$props.link);
+			if ('containerClassName' in $$props) $$invalidate(9, containerClassName = $$props.containerClassName);
+			if ('cardClassName' in $$props) $$invalidate(10, cardClassName = $$props.cardClassName);
+			if ('hot' in $$props) $$invalidate(11, hot = $$props.hot);
 		};
 
 		return [
@@ -11416,6 +11663,7 @@
 			title,
 			description,
 			cta,
+			ctaStyle,
 			link,
 			containerClassName,
 			cardClassName,
@@ -11426,7 +11674,7 @@
 	class Card extends SvelteComponent {
 		constructor(options) {
 			super();
-			if (!document.getElementById("svelte-1uenme9-style")) add_css$1();
+			if (!document.getElementById("svelte-6kgq0v-style")) add_css$1();
 
 			init(this, options, instance$5, create_fragment$5, safe_not_equal, {
 				cardImage: 0,
@@ -11436,10 +11684,11 @@
 				title: 4,
 				description: 5,
 				cta: 6,
-				link: 7,
-				containerClassName: 8,
-				cardClassName: 9,
-				hot: 10
+				ctaStyle: 7,
+				link: 8,
+				containerClassName: 9,
+				cardClassName: 10,
+				hot: 11
 			});
 		}
 	}
@@ -11541,12 +11790,11 @@
 
 	function get_each_context$1(ctx, list, i) {
 		const child_ctx = ctx.slice();
-		child_ctx[8] = list[i];
-		child_ctx[10] = i;
+		child_ctx[11] = list[i];
 		return child_ctx;
 	}
 
-	// (18:0) {#if pages > 0 }
+	// (13:0) {#if pages > 0 }
 	function create_if_block$1(ctx) {
 		let nav;
 		let ul;
@@ -11554,18 +11802,32 @@
 		let a0;
 		let a0_href_value;
 		let t1;
-		let t2;
 		let li1;
 		let a1;
 		let a1_href_value;
+		let t3;
+		let t4;
+		let t5;
+		let t6;
+		let li2;
+		let a2;
+		let t7;
+		let a2_href_value;
+		let t8;
+		let li3;
+		let a3;
+		let a3_href_value;
 		let mounted;
 		let dispose;
-		let each_value = { length: /*pages*/ ctx[1] };
+		let if_block0 = /*currentPage*/ ctx[0] >= 5 && create_if_block_3$1();
+		let each_value = Array.from({ length: 5 }, /*func*/ ctx[5]);
 		let each_blocks = [];
 
 		for (let i = 0; i < each_value.length; i += 1) {
 			each_blocks[i] = create_each_block$1(get_each_context$1(ctx, each_value, i));
 		}
+
+		let if_block1 = /*pages*/ ctx[1] - /*currentPage*/ ctx[0] > 3 && create_if_block_1$1();
 
 		return {
 			c() {
@@ -11575,25 +11837,47 @@
 				a0 = element("a");
 				a0.textContent = "Previous";
 				t1 = space();
+				li1 = element("li");
+				a1 = element("a");
+				a1.textContent = "1";
+				t3 = space();
+				if (if_block0) if_block0.c();
+				t4 = space();
 
 				for (let i = 0; i < each_blocks.length; i += 1) {
 					each_blocks[i].c();
 				}
 
-				t2 = space();
-				li1 = element("li");
-				a1 = element("a");
-				a1.textContent = "Next";
+				t5 = space();
+				if (if_block1) if_block1.c();
+				t6 = space();
+				li2 = element("li");
+				a2 = element("a");
+				t7 = text(/*pages*/ ctx[1]);
+				t8 = space();
+				li3 = element("li");
+				a3 = element("a");
+				a3.textContent = "Next";
 				attr(a0, "class", "page-link");
 				attr(a0, "href", a0_href_value = '#.');
 				attr(li0, "class", "page-item");
 				toggle_class(li0, "disabled", /*currentPage*/ ctx[0] - 1 <= 0);
 				attr(a1, "class", "page-link");
 				attr(a1, "href", a1_href_value = '#.');
+				attr(a1, "data-page", "1");
 				attr(li1, "class", "page-item");
-				toggle_class(li1, "disabled", /*currentPage*/ ctx[0] == /*pages*/ ctx[1]);
+				toggle_class(li1, "active", /*currentPage*/ ctx[0] === 1);
+				attr(a2, "class", "page-link");
+				attr(a2, "href", a2_href_value = '#.');
+				attr(a2, "data-page", /*pages*/ ctx[1]);
+				attr(li2, "class", "page-item");
+				toggle_class(li2, "active", /*currentPage*/ ctx[0] === /*pages*/ ctx[1]);
+				attr(a3, "class", "page-link");
+				attr(a3, "href", a3_href_value = '#.');
+				attr(li3, "class", "page-item");
+				toggle_class(li3, "disabled", /*currentPage*/ ctx[0] == /*pages*/ ctx[1]);
 				attr(ul, "class", "pagination");
-				attr(nav, "aria-label", "Page navigation example");
+				attr(nav, "aria-label", "Category navigation");
 			},
 			m(target, anchor) {
 				insert(target, nav, anchor);
@@ -11601,19 +11885,34 @@
 				append(ul, li0);
 				append(li0, a0);
 				append(ul, t1);
+				append(ul, li1);
+				append(li1, a1);
+				append(ul, t3);
+				if (if_block0) if_block0.m(ul, null);
+				append(ul, t4);
 
 				for (let i = 0; i < each_blocks.length; i += 1) {
 					each_blocks[i].m(ul, null);
 				}
 
-				append(ul, t2);
-				append(ul, li1);
-				append(li1, a1);
+				append(ul, t5);
+				if (if_block1) if_block1.m(ul, null);
+				append(ul, t6);
+				append(ul, li2);
+				append(li2, a2);
+				append(a2, t7);
+				append(ul, t8);
+				append(ul, li3);
+				append(li3, a3);
 
 				if (!mounted) {
 					dispose = [
 						listen(a0, "click", /*click_handler*/ ctx[2]),
-						listen(a1, "click", /*click_handler_3*/ ctx[5])
+						listen(a1, "click", /*click_handler_1*/ ctx[3]),
+						listen(li1, "click", /*click_handler_2*/ ctx[4]),
+						listen(a2, "click", /*click_handler_5*/ ctx[8]),
+						listen(li2, "click", /*click_handler_6*/ ctx[9]),
+						listen(a3, "click", /*click_handler_7*/ ctx[10])
 					];
 
 					mounted = true;
@@ -11624,8 +11923,23 @@
 					toggle_class(li0, "disabled", /*currentPage*/ ctx[0] - 1 <= 0);
 				}
 
-				if (dirty & /*currentPage, pages*/ 3) {
-					each_value = { length: /*pages*/ ctx[1] };
+				if (dirty & /*currentPage*/ 1) {
+					toggle_class(li1, "active", /*currentPage*/ ctx[0] === 1);
+				}
+
+				if (/*currentPage*/ ctx[0] >= 5) {
+					if (if_block0) ; else {
+						if_block0 = create_if_block_3$1();
+						if_block0.c();
+						if_block0.m(ul, t4);
+					}
+				} else if (if_block0) {
+					if_block0.d(1);
+					if_block0 = null;
+				}
+
+				if (dirty & /*currentPage, Array, parseInt, pages*/ 3) {
+					each_value = Array.from({ length: 5 }, /*func*/ ctx[5]);
 					let i;
 
 					for (i = 0; i < each_value.length; i += 1) {
@@ -11636,7 +11950,7 @@
 						} else {
 							each_blocks[i] = create_each_block$1(child_ctx);
 							each_blocks[i].c();
-							each_blocks[i].m(ul, t2);
+							each_blocks[i].m(ul, t5);
 						}
 					}
 
@@ -11647,58 +11961,103 @@
 					each_blocks.length = each_value.length;
 				}
 
+				if (/*pages*/ ctx[1] - /*currentPage*/ ctx[0] > 3) {
+					if (if_block1) ; else {
+						if_block1 = create_if_block_1$1();
+						if_block1.c();
+						if_block1.m(ul, t6);
+					}
+				} else if (if_block1) {
+					if_block1.d(1);
+					if_block1 = null;
+				}
+
+				if (dirty & /*pages*/ 2) set_data(t7, /*pages*/ ctx[1]);
+
+				if (dirty & /*pages*/ 2) {
+					attr(a2, "data-page", /*pages*/ ctx[1]);
+				}
+
 				if (dirty & /*currentPage, pages*/ 3) {
-					toggle_class(li1, "disabled", /*currentPage*/ ctx[0] == /*pages*/ ctx[1]);
+					toggle_class(li2, "active", /*currentPage*/ ctx[0] === /*pages*/ ctx[1]);
+				}
+
+				if (dirty & /*currentPage, pages*/ 3) {
+					toggle_class(li3, "disabled", /*currentPage*/ ctx[0] == /*pages*/ ctx[1]);
 				}
 			},
 			d(detaching) {
 				if (detaching) detach(nav);
+				if (if_block0) if_block0.d();
 				destroy_each(each_blocks, detaching);
+				if (if_block1) if_block1.d();
 				mounted = false;
 				run_all(dispose);
 			}
 		};
 	}
 
-	// (28:2) {#each { length: pages } as _, page }
-	function create_each_block$1(ctx) {
+	// (33:2) {#if currentPage >= 5 }
+	function create_if_block_3$1(ctx) {
+		let li;
+
+		return {
+			c() {
+				li = element("li");
+				li.textContent = ". . .";
+				attr(li, "class", "page-item d-flex align-items-center px-2");
+			},
+			m(target, anchor) {
+				insert(target, li, anchor);
+			},
+			d(detaching) {
+				if (detaching) detach(li);
+			}
+		};
+	}
+
+	// (43:3) {#if page > 1 && page < ( pages ) }
+	function create_if_block_2$1(ctx) {
 		let li;
 		let a;
-		let t_value = /*page*/ ctx[10] + 1 + "";
-		let t;
+		let t0_value = /*page*/ ctx[11] + "";
+		let t0;
 		let a_href_value;
 		let a_data_page_value;
+		let t1;
 		let mounted;
 		let dispose;
 
-		function click_handler_1() {
-			return /*click_handler_1*/ ctx[3](/*page*/ ctx[10]);
+		function click_handler_3() {
+			return /*click_handler_3*/ ctx[6](/*page*/ ctx[11]);
 		}
 
-		function click_handler_2() {
-			return /*click_handler_2*/ ctx[4](/*page*/ ctx[10]);
+		function click_handler_4() {
+			return /*click_handler_4*/ ctx[7](/*page*/ ctx[11]);
 		}
 
 		return {
 			c() {
 				li = element("li");
 				a = element("a");
-				t = text(t_value);
+				t0 = text(t0_value);
+				t1 = space();
 				attr(a, "class", "page-link");
 				attr(a, "href", a_href_value = '#.');
-				attr(a, "data-page", a_data_page_value = /*page*/ ctx[10] + 1);
+				attr(a, "data-page", a_data_page_value = /*page*/ ctx[11]);
 				attr(li, "class", "page-item");
-				toggle_class(li, "active", /*currentPage*/ ctx[0] === /*page*/ ctx[10] + 1);
+				toggle_class(li, "active", /*currentPage*/ ctx[0] === /*page*/ ctx[11]);
 			},
 			m(target, anchor) {
 				insert(target, li, anchor);
 				append(li, a);
-				append(a, t);
+				append(a, t0);
+				append(li, t1);
 
 				if (!mounted) {
 					dispose = [
-						listen(a, "click", click_handler_1),
-						listen(li, "click", click_handler_2)
+						listen(a, "click", click_handler_3),
+						listen(li, "click", click_handler_4)
 					];
 
 					mounted = true;
@@ -11706,15 +12065,74 @@
 			},
 			p(new_ctx, dirty) {
 				ctx = new_ctx;
+				if (dirty & /*currentPage*/ 1 && t0_value !== (t0_value = /*page*/ ctx[11] + "")) set_data(t0, t0_value);
 
-				if (dirty & /*currentPage*/ 1) {
-					toggle_class(li, "active", /*currentPage*/ ctx[0] === /*page*/ ctx[10] + 1);
+				if (dirty & /*currentPage*/ 1 && a_data_page_value !== (a_data_page_value = /*page*/ ctx[11])) {
+					attr(a, "data-page", a_data_page_value);
+				}
+
+				if (dirty & /*currentPage, Array, parseInt*/ 1) {
+					toggle_class(li, "active", /*currentPage*/ ctx[0] === /*page*/ ctx[11]);
 				}
 			},
 			d(detaching) {
 				if (detaching) detach(li);
 				mounted = false;
 				run_all(dispose);
+			}
+		};
+	}
+
+	// (38:2) {#each Array.from({      length: 5     }, ( c, k ) => ( k + parseInt( currentPage ) - 2 ) ) as page }
+	function create_each_block$1(ctx) {
+		let if_block_anchor;
+		let if_block = /*page*/ ctx[11] > 1 && /*page*/ ctx[11] < /*pages*/ ctx[1] && create_if_block_2$1(ctx);
+
+		return {
+			c() {
+				if (if_block) if_block.c();
+				if_block_anchor = empty();
+			},
+			m(target, anchor) {
+				if (if_block) if_block.m(target, anchor);
+				insert(target, if_block_anchor, anchor);
+			},
+			p(ctx, dirty) {
+				if (/*page*/ ctx[11] > 1 && /*page*/ ctx[11] < /*pages*/ ctx[1]) {
+					if (if_block) {
+						if_block.p(ctx, dirty);
+					} else {
+						if_block = create_if_block_2$1(ctx);
+						if_block.c();
+						if_block.m(if_block_anchor.parentNode, if_block_anchor);
+					}
+				} else if (if_block) {
+					if_block.d(1);
+					if_block = null;
+				}
+			},
+			d(detaching) {
+				if (if_block) if_block.d(detaching);
+				if (detaching) detach(if_block_anchor);
+			}
+		};
+	}
+
+	// (57:2) {#if ( pages - currentPage ) > 3 }
+	function create_if_block_1$1(ctx) {
+		let li;
+
+		return {
+			c() {
+				li = element("li");
+				li.textContent = ". . .";
+				attr(li, "class", "page-item d-flex align-items-center px-2");
+			},
+			m(target, anchor) {
+				insert(target, li, anchor);
+			},
+			d(detaching) {
+				if (detaching) detach(li);
 			}
 		};
 	}
@@ -11758,12 +12176,15 @@
 	function instance$3($$self, $$props, $$invalidate) {
 		let { pages = 0 } = $$props;
 		let { currentPage = 1 } = $$props;
-		createEventDispatcher();
-
 		const click_handler = () => $$invalidate(0, currentPage = currentPage - 1);
-		const click_handler_1 = page => $$invalidate(0, currentPage = page + 1);
-		const click_handler_2 = page => $$invalidate(0, currentPage = page + 1);
-		const click_handler_3 = () => $$invalidate(0, currentPage = currentPage + 1);
+		const click_handler_1 = () => $$invalidate(0, currentPage = 1);
+		const click_handler_2 = () => $$invalidate(0, currentPage = 1);
+		const func = (c, k) => k + parseInt(currentPage) - 2;
+		const click_handler_3 = page => $$invalidate(0, currentPage = page);
+		const click_handler_4 = page => $$invalidate(0, currentPage = page);
+		const click_handler_5 = () => $$invalidate(0, currentPage = pages);
+		const click_handler_6 = () => $$invalidate(0, currentPage = pages);
+		const click_handler_7 = () => $$invalidate(0, currentPage = currentPage + 1);
 
 		$$self.$$set = $$props => {
 			if ('pages' in $$props) $$invalidate(1, pages = $$props.pages);
@@ -11776,7 +12197,12 @@
 			click_handler,
 			click_handler_1,
 			click_handler_2,
-			click_handler_3
+			func,
+			click_handler_3,
+			click_handler_4,
+			click_handler_5,
+			click_handler_6,
+			click_handler_7
 		];
 	}
 
@@ -11954,7 +12380,7 @@
 				create_component(filterpagination.$$.fragment);
 				attr(ul, "class", "list-group list-group-flush mb-4 border-top border-bottom py-2");
 				attr(div0, "class", "col-auto");
-				attr(div1, "class", "row justify-content-end");
+				attr(div1, "class", "row justify-content-center");
 			},
 			m(target, anchor) {
 				mount_component(filtercontrols, target, anchor);
@@ -12085,7 +12511,7 @@
 
 				t = space();
 				if (if_block) if_block.c();
-				attr(div0, "class", "row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-5");
+				attr(div0, "class", "row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5");
 				attr(div1, "class", "container");
 			},
 			m(target, anchor) {
@@ -12197,7 +12623,7 @@
 		};
 	}
 
-	// (146:10) {#if dataRow._embedded['wp:featuredmedia']}
+	// (146:10) {#if dataRow._embedded['wp:featuredmedia'] && typeof dataRow._embedded['wp:featuredmedia'][0].media_details !== 'undefined' }
 	function create_if_block_4(ctx) {
 		let div;
 		let img;
@@ -12210,7 +12636,7 @@
 				img = element("img");
 				attr(img, "class", "shadow svelte-eyybwu");
 				if (img.src !== (img_src_value = /*dataRow*/ ctx[16]._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url)) attr(img, "src", img_src_value);
-				attr(img, "alt", img_alt_value = /*dataRow*/ ctx[16]._embedded['wp:featuredmedia'][0].media_details.alt_text);
+				attr(img, "alt", img_alt_value = /*dataRow*/ ctx[16]._embedded['wp:featuredmedia'][0].media_details.alt_text ?? '');
 				attr(div, "class", "ratio ratio-16x9 svelte-eyybwu");
 			},
 			m(target, anchor) {
@@ -12222,7 +12648,7 @@
 					attr(img, "src", img_src_value);
 				}
 
-				if (dirty & /*data*/ 4 && img_alt_value !== (img_alt_value = /*dataRow*/ ctx[16]._embedded['wp:featuredmedia'][0].media_details.alt_text)) {
+				if (dirty & /*data*/ 4 && img_alt_value !== (img_alt_value = /*dataRow*/ ctx[16]._embedded['wp:featuredmedia'][0].media_details.alt_text ?? '')) {
 					attr(img, "alt", img_alt_value);
 				}
 			},
@@ -12244,7 +12670,7 @@
 		const if_blocks = [];
 
 		function select_block_type_1(ctx, dirty) {
-			if (/*dataRow*/ ctx[16]._embedded['wp:featuredmedia']) return 0;
+			if (/*dataRow*/ ctx[16]._embedded['wp:featuredmedia'] && typeof /*dataRow*/ ctx[16]._embedded['wp:featuredmedia'][0].media_details !== 'undefined') return 0;
 			return 1;
 		}
 
@@ -13195,17 +13621,17 @@
 				div7 = element("div");
 				span = element("span");
 				span.textContent = `© ${(/\d{4}/).exec(Date())[0]} NWEA`;
-				attr(div0, "class", "col-md-3");
-				attr(div1, "class", "col-md-3");
-				attr(div2, "class", "col-md-3");
-				attr(div3, "class", "col-md-3");
-				attr(div4, "class", "row gx-md-5 pb-4");
+				attr(div0, "class", "col-sm-6 col-md-3");
+				attr(div1, "class", "col-sm-6 col-md-3");
+				attr(div2, "class", "col-sm-6 col-md-3");
+				attr(div3, "class", "col-sm-6 col-md-3");
+				attr(div4, "class", "row gx-md-5 pb-4 footer-columns");
 				attr(a, "href", "https://www.nwea.org");
-				attr(div5, "class", "col-12 col-md-4 mb-3");
-				attr(div6, "class", "col-12 col-md-auto ms-md-auto");
+				attr(div5, "class", "col-12 col-lg-4 mb-3 mb-md-0 ms-n3");
+				attr(div6, "class", "col-12 col-lg-auto ms-lg-auto ms-n3 ms-lg-0");
 				attr(span, "class", "text-gray-400");
-				attr(div7, "class", "col-12 col-md-auto");
-				attr(div8, "class", "row border-top border-1 border-white py-5 justify-content-between align-items-center");
+				attr(div7, "class", "col-12 col-lg-auto ms-n3 ms-lg-0 me-n3");
+				attr(div8, "class", "row border-top border-1 border-white py-5 py-lg-3 justify-content-between align-items-center mx-0");
 				attr(div9, "class", "container");
 				attr(div10, "class", "container-fluid bg-dark py-4 text-white");
 			},
@@ -13285,6 +13711,17 @@
 	window.nwea = nwea;
 
 	if (typeof footer_args !== 'undefined') {
+	  // Find/replace values if hostname is the static site URL.
+	  if ("d1ushxurfijnsi.cloudfront.net" === window.location.hostname) {
+	    for (var _i = 0, _Object$entries = Object.entries(footer_args.content); _i < _Object$entries.length; _i++) {
+	      var _Object$entries$_i = _slicedToArray(_Object$entries[_i], 2),
+	          key = _Object$entries$_i[0],
+	          value = _Object$entries$_i[1];
+
+	      footer_args.content[key] = value.replaceAll("https://stage.cms.nwea.io", 'https://' + "d1ushxurfijnsi.cloudfront.net");
+	    }
+	  }
+
 	  new nwea.Footer({
 	    target: document.getElementById('wrapper-footer'),
 	    props: {
