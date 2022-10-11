@@ -1,0 +1,661 @@
+#gated.modal_form_container .modal-body { padding-bottom: 35px; min-height: 375px; }
+
+#gated.modal_form_container p,
+#gated.modal_form_container ul,
+#gated.modal_form_container li,
+#gated.modal_form_container b,
+#gated.modal_form_container h2,
+#gated.modal_form_container label,
+#gated.modal_form_container a,
+#gated.modal_form_container a:visited,
+#gated.modal_form_container a:active,
+#gated.modal_form_container a:hover{
+    font-family: Gotham-Book, 'Helvetica Neue',Helvetica,Arial,sans-serif ;
+    text-decoration:none;
+    font-weight: 400;
+    color: #414142;
+}
+
+#gated.modal_form_container .form_wrapper h2{
+    /* padding: 5px 15px 5px 9px !important; */
+    /* margin: 0 auto 10px !important; */
+	/* letter-spacing: -0.5px; */
+}
+
+#gated.modal_form_container .form_wrapper h1
+{
+	font-family: Gotham-Book, 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight:400;
+	font-size: 26px;
+	color: #414142;
+}
+
+#gated.modal_form_container .form_wrapper h2
+{
+	font-family: Gotham-Black, 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight:400;
+	font-size: 21px;
+	color: #414142;
+}
+
+#gated.modal_form_container .form_wrapper h3
+{
+	font-family: Sentinel, 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight:400;
+	font-size: 21px;
+	color: #414142;
+}
+
+#gated.modal_form_container .form_wrapper h4
+{
+	font-family: Gotham-Bold, 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight:400;
+	font-size: 16px;
+	color: #414142;
+}
+
+#gated.modal_form_container .form_wrapper h5
+{
+	font-family: Gotham-Book, 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight:400;
+	font-size: 16px;
+	color: #414142;
+}
+
+#gated.modal_form_container .form_wrapper h6
+{
+	font-family: Gotham-Bold, 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight:400;
+	font-size: 14.5px;
+	color: #414142;
+}
+
+#gated.modal_form_container .form_wrapper p
+{
+	font-family: Gotham-Book, 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight:400;
+	font-size: 14.5px;
+	color: #414142;
+}
+
+#gated.modal_form_container a,
+#gated.modal_form_container a:visited,
+#gated.modal_form_container a:active,
+#gated.modal_form_container a:hover{
+	color: #0d607c !important;
+	font-family: Gotham-Book, 'Helvetica Neue',Helvetica,Arial,sans-serif !important;
+}
+
+#gated.modal_form_container .success_wrapper button.btn-dismiss{
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: #217b8e;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#gated.modal_form_container .success_wrapper a.btn{ margin-top:15px; }
+#gated.modal_form_container .success_wrapper a.btn.btn-primary,
+#gated.modal_form_container .success_wrapper a.btn.btn-secondary{
+    color: #fff !important;
+}
+
+#gated.modal_form_container .success_wrapper .btn-wrap{
+    text-align:center;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+#gated.modal_form_container .modal-header { padding: 5px 15px; }
+
+#gated.modal_form_container .modal-header h1,
+#gated.modal_form_container .modal-header h2,
+#gated.modal_form_container .modal-header h3,
+#gated.modal_form_container .modal-header h4,
+#gated.modal_form_container .modal-header h5,
+#gated.modal_form_container .modal-header h6,
+#gated.modal_form_container .modal-header p
+{
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+#gated.modal_form_container .intro_wrapper h1,
+#gated.modal_form_container .intro_wrapper h2,
+#gated.modal_form_container .intro_wrapper h3,
+#gated.modal_form_container .intro_wrapper h4,
+#gated.modal_form_container .intro_wrapper h5,
+#gated.modal_form_container .intro_wrapper h6,
+#gated.modal_form_container .intro_wrapper p
+{
+    text-align: center;
+	margin-top: 10px;
+}
+
+#gated.modal_form_container .form_wrapper{
+    padding-top: 0;
+    padding-left: 0;
+	/* padding-bottom: 35px !important; */
+}
+
+#gated.modal_form_container .form_wrapper .mktoFieldWrap{
+    max-width: 100% !important;
+    /*height: 30px; @GK Hiding for now*/
+    height: initial !important;
+    margin-bottom: 20px !important;
+}
+#gated.modal_form_container .form_wrapper .mktoFieldWrap.selectFieldWrap{
+	height: 53px;
+}
+
+#gated.modal_form_container .form_wrapper .mktoFieldWrap label + .mktoGutter{
+	display:none;
+}
+
+#gated.modal_form_container .form_wrapper .mktoFieldWrap label a{
+	font-size: 11px;
+}
+
+#gated.modal_form_container .form_wrapper .mktoField.mktoTextField,
+#gated.modal_form_container .form_wrapper .mktoField.mktoTelField,
+#gated.modal_form_container .form_wrapper .mktoField.mktoEmailField{
+    clear: both;
+	height: 30px;
+}
+
+/* Label field for Role Question */
+label[for='Standard_Function__c']{
+    width: 70px !important;
+}
+
+@media screen and (min-width:416px){
+    label[for='Self_ID_Current_Partner__c'] ~ .mktoLogicalField.mktoCheckboxList.mktoHasWidth{
+        /* padding-left: 30px; */
+    }
+}
+
+
+#gated.modal_form_container .form_wrapper form{
+	margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#gated.modal_form_container .form_wrapper .mktoForm{
+    max-width: 100%;
+}
+
+#gated.modal_form_container .form_wrapper .mktoFormRow label{
+    font-size: 12px;
+    padding-top: 0;
+}
+
+#gated.modal_form_container .form_wrapper select#Standard_Function__c{
+	position: relative;
+	width: auto !important;
+	top: 5px;
+}
+
+/* @GK Reduce space between heading and email input with label hidden */
+#gated.modal_form_container .form_wrapper .mktoFormRow label[for=FirstName],
+#gated.modal_form_container .form_wrapper .mktoFormRow label[for=LastName],
+#gated.modal_form_container .form_wrapper .mktoFormRow label[for=Company],
+#gated.modal_form_container .form_wrapper .mktoFormRow label[for=Title],
+#gated.modal_form_container .form_wrapper .mktoFormRow label[for=Email],
+#gated.modal_form_container .form_wrapper .mktoFormRow label[for=Phone],
+#gated.modal_form_container .form_wrapper .mktoFormRow label[for=City],
+#gated.modal_form_container .form_wrapper .mktoFormRow label[for=Country],
+#gated.modal_form_container .form_wrapper .mktoFormRow label[for=State] {
+    
+}
+ 
+/* @TODO Switch specific field names to input types */   
+#gated.modal_form_container .form_wrapper .mktoForm label[for=FirstName] + .mktoGutter,
+#gated.modal_form_container .form_wrapper .mktoForm label[for=LastName] + .mktoGutter,
+#gated.modal_form_container .form_wrapper .mktoForm label[for=Company] + .mktoGutter,
+#gated.modal_form_container .form_wrapper .mktoForm label[for=Title] + .mktoGutter,
+#gated.modal_form_container .form_wrapper .mktoForm label[for=Email] + .mktoGutter,
+#gated.modal_form_container .form_wrapper .mktoForm label[for=Phone] + .mktoGutter,
+#gated.modal_form_container .form_wrapper .mktoForm label[for=City] + .mktoGutter,
+#gated.modal_form_container .form_wrapper .mktoForm label[for=Country] + .mktoGutter
+#gated.modal_form_container .form_wrapper .mktoForm label[for=State] + .mktoGutter 
+{
+    /*height:.25em !important;*/
+}
+
+/* @GK Remove gutter for Select field */
+/* @TODO Switch specific field names to input types */   
+#gated.modal_form_container .form_wrapper .mktoForm label[for=Country] + .mktoGutter,
+#gated.modal_form_container .form_wrapper .mktoForm label[for=State] + .mktoGutter{
+    /*display:none; @GK @TODO */
+}
+
+/* @TODO Switch specific field names to input types */   
+#gated.modal_form_container .form_wrapper [name='Country']{
+	/*width: 100% !important;*/
+	/*max-width: 100% !important;*/
+	/*padding-left: 0;*/
+}
+
+#gated.modal_form_container .form_wrapper .mktoFieldWrap{
+    /* padding-left: 25px; */
+    padding-left: 0 !important;
+    margin-bottom: 5px;
+}
+
+
+#gated.modal_form_container .form_wrapper .mktoFieldWrap .mktoCheckboxList .mktoField{
+    position:relative;
+    top: 4px;
+}
+
+
+#gated.modal_form_container .form_wrapper .mktoForm .mktoAsterix{
+    float: left;
+    /*left: 90px !important;*/
+    left: 17px !important;
+    /*position: absolute !important;*/
+    /*top: -7px !important;*/
+    /*display: none;*/
+}
+/* + */
+
+#gated.modal_form_container .form_wrapper .mktoForm .mktoField{
+    font-size: 12px !important;
+    padding: 5px !important;
+    letter-spacing: 0.25px !important;
+}
+
+#gated.modal_form_container .form_wrapper .mktoForm .mktoButtonWrap.mktoNative .mktoButton, 
+#gated.modal_form_container .form_wrapper .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+    border: 1px solid #fec10d !important;
+    padding: 0.4em 1em;
+    background-color: #fec10d !important;
+    background-image: none;
+    color: #414142;
+    font-size: 1em;
+}
+
+#gated.modal_form_container .form_wrapper .mktoForm .mktoButtonWrap.mktoNative .mktoButton:hover,
+#gated.modal_form_container .form_wrapper .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
+    border: 1px solid #fec10d;
+}
+
+#gated.modal_form_container .form_wrapper .mktoForm .mktoButtonWrap.mktoNative .mktoButton:focus,
+#gated.modal_form_container .form_wrapper .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:focus {
+    outline: none;
+    border: 1px solid #fec10d;
+}
+
+#gated.modal_form_container .form_wrapper .mktoForm .mktoButtonWrap.mktoNative .mktoButton:active,
+#gated.modal_form_container .form_wrapper .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:active {
+    background-color: #fec10d;
+    background-image: none;
+    color: #414142;
+}
+
+#gated.modal_form_container .form_wrapper .mktoButtonRow {
+    width: 100%;
+    text-align: center;
+}
+
+#gated.modal_form_container .form_wrapper .mktoButtonRow { margin-top:15px; }
+
+#gated.modal_form_container .form_wrapper .mktoButtonRow .mktoButtonWrap{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 15px;
+}
+
+#gated.modal_form_container .form_wrapper .mktoFieldWrap .mktoCheckboxList .mktoField[name='gDPRConsenttoProcessing']{
+	/*top: 7px;*/
+}
+
+#gated.modal_form_container .form_wrapper .mktoFieldWrap > .mktoLabel { height:0; }
+
+    /* #gated.modal_form_container .form_wrapper .mktoFormRow label{
+        padding-left: 10px;
+		text-indent: 0 !important;
+	} */
+	
+    /* #gated.modal_form_container .form_wrapper .mktoFieldWrap .mktoLabel{
+        padding-top: 3px; !important;
+    } */
+
+    /* #gated.modal_form_container .form_wrapper .mktoFormRow + .mktoFormRow .mktoFieldWrap .mktoLabel{
+        position: relative !important;
+        /---* left: 20px !important; *---/
+    } */
+		    
+    /* #gated.modal_form_container .form_wrapper .mktoFieldWrap .mktoLabel a{
+        padding: 0;
+        margin: 0;
+    } */
+
+#gated.modal_form_container .success_wrapper button { margin-top:15px; }
+	
+#gated.modal_form_container .success_wrapper { text-align: center !important; }
+
+#gated.modal_form_container span.headline__thank_you{ 
+    font-family: Gotham,"Helvetica Neue",Helvetica,Arial,sans-serif;  
+    font-size: 21px;
+}
+#gated.modal_form_container .success_wrapper h1,
+#gated.modal_form_container .success_wrapper h2,
+#gated.modal_form_container .success_wrapper h3,
+#gated.modal_form_container .success_wrapper h4,
+#gated.modal_form_container .success_wrapper h5 { 
+    text-align: center;
+    font-family: Gotham-Book,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+}
+
+#gated.modal_form_container .form_wrapper form { 
+    padding-left: 0;
+    padding-right: 0;
+}
+
+		#gated.modal_form_container .form_wrapper .btn-group.multi-group{
+			width: 100%;
+		}
+		
+		#gated.modal_form_container .form_wrapper .multiselect.dropdown-toggle{
+			position: relative;
+			display: block;
+		   	-webkit-appearance: none;
+		   	-moz-appearance:    none;
+		   	appearance:         none;
+		   	border-radius: 		0;
+		   	text-align: 		left;
+		   	width: 				100%;
+		   	min-width: 			100%;
+		   	max-width: 			100%;
+		   	background: 		#fff;
+			border: 			1px solid !important;
+		}
+		
+		 #gated.modal_form_container .form_wrapper .multiselect.dropdown-toggle:after{
+		    	display: block;
+			    position: absolute;
+			    visibility: visible;
+			    font-family: FontAwesome;
+			    content: "\f107";
+			    font-size: 18px;
+		        top: 1px;
+	    		right: 1px;
+		    }
+			    
+			#gated.modal_form_container .form_wrapper .multiselect.dropdown-toggle span{
+				font-size: 12px !important;
+	    		padding: 5px 16px 5px 5px !important;
+	    		letter-spacing: 0.25px !important;
+    		    line-height: 1.5;
+			}
+			
+			/* Target Safari Only */
+			/* https://stackoverflow.com/questions/16348489/is-there-a-css-hack-for-safari-only-not-chrome */
+			@media not all and (-webkit-min-device-pixel-ratio:0), not all and (min-resolution:.001dpcm)
+			{ @supports (-webkit-appearance:none) {
+			    #gated.modal_form_container .form_wrapper .multiselect.dropdown-toggle{
+					-webkit-appearance: menulist;
+			   		-moz-appearance:    menulist;
+			   		appearance:         menulist;
+			    }
+			   	#gated.modal_form_container .form_wrapper .multiselect.dropdown-toggle span{
+					padding: 15px !important;
+					line-height: 30px;
+			   	}
+			   	
+				#gated.modal_form_container .form_wrapper .multiselect.dropdown-toggle:after{
+					display: none;
+				}
+			}}
+		
+		#gated.modal_form_container .form_wrapper .multiselect-option.dropdown-item{
+			text-align: left;
+		}
+		
+		#gated.modal_form_container .form_wrapper span.multiselect-native-select{display:block; margin-top:0px;}
+	
+		#gated.modal_form_container .form_wrapper span.multiselect-native-select select + .btn-group.multi-group,
+		#gated.modal_form_container .form_wrapper span.multiselect-native-select .mktoError + .btn-group.multi-group{
+			margin-top: 19px;
+		}
+		
+		#gated.modal_form_container .form_wrapper .multiselect-group.dropdown-item-text.group-1:hover{
+			background: transparent;
+		}
+		
+		#gated.modal_form_container .form_wrapper .multiselect-container{
+			min-width: 100%;
+		}
+		
+		#gated.modal_form_container .form_wrapper .multiselect-container > button { 
+			background:#fff;
+			display: block;
+			width: 100%;
+			border: 0 none transparent;
+		}
+		
+		#gated.modal_form_container .form_wrapper .multiselect-container .multiselect-option label {
+		    font-size: 12px;
+		    padding-top: 0;
+		    word-wrap: break-word;
+		    display: inline-block;
+		    white-space: normal;
+		    max-width: 90%;
+		}
+		
+		#gated.modal_form_container .form_wrapper .multiselect-option input.form-check-input{
+			vertical-align: top;
+		    margin-top: 3px;
+		    margin-right: 10px;
+		}
+		
+		#gated.modal_form_container .form_wrapper .multiselect-container .multiselect-option .form-check,
+		#gated.modal_form_container .form_wrapper .multiselect-container .multiselect-group .form-check,
+		#gated.modal_form_container .form_wrapper .multiselect-container .multiselect-all .form-check{
+		    padding: 0 5px 0 0px;
+		    
+		    
+		}
+		#gated.modal_form_container .form_wrapper .form-check-label{
+    	    font-size: 12px;
+			font-weight: 400;
+	    }
+		
+		#gated.modal_form_container .form_wrapper .multiselect-container .multiselect-option.active:not(.multiselect-active-item-fallback),
+		#gated.modal_form_container .form_wrapper .multiselect-container .multiselect-group.active:not(.multiselect-active-item-fallback),
+		#gated.modal_form_container .form_wrapper .multiselect-container .multiselect-all.active:not(.multiselect-active-item-fallback),
+		#gated.modal_form_container .form_wrapper .multiselect-container .multiselect-option:not(.multiselect-active-item-fallback):active,
+		#gated.modal_form_container .form_wrapper .multiselect-container .multiselect-group:not(.multiselect-active-item-fallback):active,
+		#gated.modal_form_container .form_wrapper .multiselect-container .multiselect-all:not(.multiselect-active-item-fallback):active{
+			background: #fff !important;
+		}
+		
+		#gated.modal_form_container .form_wrapper .multiselect-container .multiselect-option:focus,
+		#gated.modal_form_container .form_wrapper .multiselect-container .multiselect-group:focus,
+		#gated.modal_form_container .form_wrapper .multiselect-container .multiselect-all:focus{
+			background: #fff !important;
+		}
+	
+		#gated.modal_form_container .form_wrapper .multiselect-container .multiselect-option:hover,
+		#gated.modal_form_container .form_wrapper .multiselect-container .multiselect-group:hover,
+		#gated.modal_form_container .form_wrapper .multiselect-container .multiselect-all:hover,
+		#gated.modal_form_container .form_wrapper .multiselect-container .multiselect-option.active:hover:not(.multiselect-active-item-fallback),
+		#gated.modal_form_container .form_wrapper .multiselect-container .multiselect-group.active:hover:not(.multiselect-active-item-fallback),
+		#gated.modal_form_container .form_wrapper .multiselect-container .multiselect-all.active:hover:not(.multiselect-active-item-fallback)
+		{
+			background: #f5f5f5 !important;
+		}
+		
+		#gated.modal_form_container .form_wrapper .multiselect-container .multiselect-option:hover .form-check-label{
+			color: #0e607c !important;
+		}
+		
+
+@media screen and (max-width:480px){
+
+	/* Mobile Widths */
+	#gated.modal_form_container .form_wrapper { max-width: 100%; }
+	
+	#gated.modal_form_container .form_wrapper .mktoFieldWrap { max-width: 100%; }
+	
+	#gated.modal_form_container .form_wrapper .mktoForm { max-width: 100%; }
+	
+	#gated.modal_form_container .form_wrapper .mktoField.mktoTextField, 
+	#gated.modal_form_container .form_wrapper .mktoField.mktoTelField,
+	#gated.modal_form_container .form_wrapper .mktoField.mktoEmailField{
+	    max-width: 100%;
+	}
+	
+	#gated.modal_form_container .form_wrapper .mktoLogicalField.mktoCheckboxList { max-width: 100%; }
+	
+    /* @GK Dep  */
+    /*
+	#gated.modal_form_container .form_wrapper .mktoForm .mktoError { 
+		max-width: 100%; 
+		bottom: initial !important;
+		// top: 32px;
+    } */
+
+	/* /Mobile Widths */
+
+    #gated.modal_form_container .form_wrapper
+    {
+		/* width: 285px; */
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 0 !important;
+    }
+    
+    #gated..modal_form_container .form_wrapper .mktoFormRow label { padding-top: 0 !important; }
+    
+    #gated.modal_form_container .form_wrapper .mktoField.mktoTextField, 
+    #gated.modal_form_container .form_wrapper .mktoField.mktoTelField,
+    #gated.modal_form_container .form_wrapper .mktoField.mktoEmailField{
+        width: 100% !important;
+        margin-bottom: 5px;
+        max-width: 100% !important
+    }
+    
+    /* @GK Dep  */
+    /* #gated.modal_form_container .form_wrapper .mktoFieldWrap{
+    	width: 285px !important;
+        min-width: 285px !important;
+        max-width: 285px !important;
+    }
+    */
+    
+    #gated.modal_form_container .form_wrapper .mktoForm{
+        width: 285px !important;
+        min-width: 285px !important;
+        max-width: 285px !important;
+    }
+
+    #gated.modal_form_container .form_wrapper .mktoFormRow label{
+    	max-width: 90%;
+    	padding-top: 0;
+    }
+    
+    /* @GK Dep  */
+    /* #gated.modal_form_container .form_wrapper .mktoForm select.mktoField { margin-left: -10px; } */
+    
+    #gated.modal_form_container a{
+    	margin: 0 0;
+    	padding: 0 0;
+    }
+    
+    #gated.modal_form_container input[name='Self_ID_Current_Partner__c']{
+    	/*top: 10px !important;*/
+    	/*left: 5px;*/
+    }
+    
+    #gated.modal_form_container .form_wrapper [name='gDPRConsenttoProcessing'] { 
+    	/*left: 5px !important; */
+    }
+
+    #gated.modal_form_container .form_wrapper .mktoForm .mktoField { padding: 15px 5px !important; }
+    
+    #gated.modal_form_container .form_wrapper h2 { font-size: 12px !important; }
+
+    #gated.modal_form_container .form_wrapper .mktoButtonRow span.mktoButtonWrap.mktoNative,
+    #gated.modal_form_container .form_wrapper .mktoButtonRow span.mktoButtonWrap.mktoSimple{
+        /* margin-left: 80px !important; */
+    }
+    
+    #gated.modal_form_container .form_wrapper .mktoFieldWrap .mktoCheckboxList .mktoField { top: 0px; }
+
+    #gated.modal_form_container .form_wrapper .mktoForm{
+    	padding: 0 !important;
+        max-width:100% !important;
+        min-width:100% !important;
+        width: 100% !important;
+    }
+
+    #gated.modal_form_container .form_wrapper .mktoFieldWrap { padding-left:5px; }
+
+    /* @GK Dep */
+    /*#gated.modal_form_container .form_wrapper .mktoFormRow label { text-indent:10px; }*/
+    
+    #gated.modal_form_container .form_wrapper .mktoLogicalField.mktoCheckboxList { width: 100% !important; }
+
+    /* My Role */
+    /* #mktoCheckbox_29656_0{ top: -3px; }
+    #mktoCheckbox_29656_0 + label
+    {
+        position: relative;
+        top: 5px;
+    } */
+
+	/* @TODO Switch specific field names to input types */   
+    #gated.modal_form_container .form_wrapper .mktoForm .mktoLabel[for='Standard_Function__c']
+    {
+    	/*text-indent: 0;*/
+        /*padding-left: 0;*/
+    }
+    
+	/* @TODO Switch specific field names to input types */   
+    #gated.modal_form_container .form_wrapper .mktoForm .mktoLabel[for='Standard_Function__c'] .mktoAsterix
+    {
+    	/*display: none;*/
+    }
+    
+	/* @TODO Switch specific field names to input types */   
+    input[name='Self_ID_Current_Partner__c']
+    {
+        /*position: relative;*/
+        /*top: 0px !important;*/
+    }
+    
+    input[name='Self_ID_Current_Partner__c'] + label
+    {
+        /*top: 8px !important;*/
+        /*position: relative;*/
+    }
+    
+    @-moz-document url-prefix()
+    {
+    	#gated.modal_form_container .form_wrapper select#Standard_Function__c
+    	{
+    		top: 15px;
+    		width: 100% !important;
+    	}
+    }
+    
+    #gated.modal_form_container .form_wrapper .mktoButtonRow
+    {
+		margin-top: 35px;
+		margin-bottom: 35px;
+	}
+}
+
+.play_btn_thumbnail .thumbnail_holder{
+    width: 100%;
+}
+/*# sourceMappingURL=nwea.resource-gate.css.map */
