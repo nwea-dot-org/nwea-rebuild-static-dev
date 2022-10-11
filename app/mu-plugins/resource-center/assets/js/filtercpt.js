@@ -149,7 +149,7 @@
 									title: "No Results Found"
 								  }).wrap('<h4 />').parent();
 				
-				var imgcol	= $( $('<div />') ).wrap('<div class="cell-wrap" />').parent().wrap('<div class="td col-img xs sm visible-md visible-lg" />').parent();
+				var imgcol	= $( $('<div />') ).wrap('<div class="cell-wrap" />').parent().wrap('<div class="td col-img d-none d-md-block" />').parent();
 				// For the responsiveness layout, 
 				// use imgrow in the text column
 				var imgrow	  = $( $('<div />') ).wrap('<div class="imgrow visible-xs visible-sm d-md-none d-lg-none" />').parent();
@@ -194,7 +194,7 @@
 
 				var txt_products = ( 1 <= v.products.length ) ? $('<p />',{class: 'products'}).html('Products: ' + v.products) : $('<p />') ;
 
-				var imgcol	= $( v.thumb ).wrap('<div class="cell-wrap" />').parent().wrap('<div class="td col-img xs sm visible-md visible-lg" />').parent();
+				var imgcol	= $( v.thumb ).wrap('<div class="cell-wrap" />').parent().wrap('<div class="td col-img d-none d-md-block" />').parent();
 
 				// For the responsiveness layout, 
 				// use imgrow in the text column
@@ -386,9 +386,9 @@
 				    
 					// @GK Reveal the clear button
 					if( $('.chip.active').length >= 1 ){
-						$('.reset.btn-clear').removeClass('hidden');
+						$('.reset.btn-clear').removeClass('d-none');
 					}else{
-						$('.reset.btn-clear').addClass('hidden');
+						$('.reset.btn-clear').addClass('d-none');
 					}
 				},350);
 				
@@ -549,10 +549,10 @@
 									title: "No Results Found"
 								  }).wrap('<h4 />').parent();
 				
-				var imgcol	= $( $('<div />') ).wrap('<div class="cell-wrap" />').parent().wrap('<div class="td col-img hidden-xs hidden-sm visible-md visible-lg" />').parent();
+				var imgcol	= $( $('<div />') ).wrap('<div class="cell-wrap" />').parent().wrap('<div class="td col-img d-none d-md-block" />').parent();
 				// For the responsiveness layout, 
 				// use imgrow in the text column
-				var imgrow	  = $( $('<div />') ).wrap('<div class="imgrow visible-xs visible-sm hidden-md hidden-lg" />').parent();
+				var imgrow	  = $( $('<div />') ).wrap('<div class="imgrow d-xs-block d-md-none" />').parent();
 				
 				var txtcol = $('<div />',{class: 'cell-wrap'})
 								.append( imgrow )
@@ -594,11 +594,11 @@
 
 				var txt_products = ( 1 <= v.products.length ) ? $('<p />',{class: 'products'}).html('Products: ' + v.products) : $('<p />') ;
 
-				var imgcol	= $( v.thumb ).wrap('<div class="cell-wrap" />').parent().wrap('<div class="td col-img hidden-xs hidden-sm visible-md visible-lg" />').parent();
+				var imgcol	= $( v.thumb ).wrap('<div class="cell-wrap" />').parent().wrap('<div class="td col-img d-none d-md-block" />').parent();
 
 				// For the responsiveness layout, 
 				// use imgrow in the text column
-				var imgrow	  = $( v.thumb ).wrap('<div class="imgrow visible-xs visible-sm hidden-md hidden-lg" />').parent();
+				var imgrow	  = $( v.thumb ).wrap('<div class="imgrow d-xs-block d-md-none" />').parent();
 				
 				var txtcol = $('<div />',{class: 'cell-wrap'})
 								.append( imgrow )
