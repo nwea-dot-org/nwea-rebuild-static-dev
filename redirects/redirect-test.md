@@ -1,3 +1,5 @@
+---
 title: My amazing post
 redirect_from:
   - /post/123456789/
+---
