@@ -1,4 +1,6 @@
 url: https://d1ushxurfijnsi.cloudfront.net
 
+baseurl: /
+
 plugins:
   - jekyll-redirect-from
